@@ -1,0 +1,27 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-PortfolioPiece1.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\AIBaseClass.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\AITokenSystem.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\GameInst.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAI.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1.init.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1Character.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1GameMode.gen.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\GameInst.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1Character.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1GameMode.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\AIBaseClass.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAI.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\AITokenSystem.cpp.obj"
+"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\Default.rc2.res"
+/OUT:"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\UnrealEditor-PortfolioPiece1.lib"
