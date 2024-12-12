@@ -1,11 +1,11 @@
-"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\UnrealEditor\Inc\PortfolioPiece1\UHT\MeleeAIController.gen.cpp"
-/FI"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"
-/FI"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\Definitions.PortfolioPiece1.h"
-/Yu"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"
-/Fp"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.pch"
-/Fo"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.gen.cpp.obj"
-/sourceDependencies "C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.gen.cpp.dep.json"
-@"C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1.Shared.rsp"
+"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\UnrealEditor\Inc\PortfolioPiece1\UHT\MeleeAIController.gen.cpp"
+/FI"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"
+/FI"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\Definitions.PortfolioPiece1.h"
+/Yu"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"
+/Fp"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\PortfolioPiece1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.pch"
+/Fo"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.gen.cpp.obj"
+/sourceDependencies "C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\MeleeAIController.gen.cpp.dep.json"
+@"C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\x64\UnrealEditor\Development\PortfolioPiece1\PortfolioPiece1.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

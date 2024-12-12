@@ -1,6 +1,6 @@
 
-#include "MeleeAIController.h"
 #include "MeleeAI.h"
+#include "MeleeAIController.h"
 
 void AMeleeAI::BeginPlay()
 {

@@ -259,8 +259,8 @@
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT"
 /I "Runtime\AIModule\Classes"
 /I "Runtime\AIModule\Public"
-/I "C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Intermediate\Build\Win64\UnrealEditor\Inc\PortfolioPiece1\UHT"
-/I "C:\Users\nikodemius.ivarsson\Documents\Unreal Projects\PortfolioPiece1\Source"
+/I "C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Intermediate\Build\Win64\UnrealEditor\Inc\PortfolioPiece1\UHT"
+/I "C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source"
 /I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"
 /I "..\Plugins\EnhancedInput\Source\EnhancedInput\Public"
 /external:W0

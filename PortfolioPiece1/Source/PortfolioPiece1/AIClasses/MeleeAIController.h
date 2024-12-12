@@ -15,15 +15,10 @@ class PORTFOLIOPIECE1_API AMeleeAIController : public AAIController
 	GENERATED_BODY()
 protected:
 	AMeleeAIController();
+	UBehaviorTree* CreateBehaviorTree();
 	virtual void BeginPlay() override;
 
 private:
 	UPROPERTY()
 	UBehaviorTree* BehaviorTree = nullptr;
-
-	UPROPERTY()
-	UBlackboardComponent* BlackboardComponent = nullptr;
-
-public:
-	inline UBlackboardComponent* GetBlackboard() const { return BlackboardComponent; }
 };

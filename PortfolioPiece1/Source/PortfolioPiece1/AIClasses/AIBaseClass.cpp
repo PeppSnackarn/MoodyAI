@@ -1,12 +1,11 @@
-
-#include "PortfolioPiece1/Systems/GameInst.h"
 #include "AIBaseClass.h"
+#include "PortfolioPiece1/Systems/GameInst.h"
 
 
 AAIBaseClass::AAIBaseClass()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void AAIBaseClass::BeginPlay()
