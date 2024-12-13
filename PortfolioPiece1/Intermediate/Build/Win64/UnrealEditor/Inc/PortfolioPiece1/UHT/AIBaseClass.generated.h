@@ -24,7 +24,7 @@ private: \
 	static void StaticRegisterNativesAAIBaseClass(); \
 	friend struct Z_Construct_UClass_AAIBaseClass_Statics; \
 public: \
-	DECLARE_CLASS(AAIBaseClass, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
+	DECLARE_CLASS(AAIBaseClass, ACharacter, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
 	DECLARE_SERIALIZER(AAIBaseClass)
 
 
@@ -36,7 +36,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AAIBaseClass); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAIBaseClass); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAIBaseClass) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AAIBaseClass) \
 	NO_API virtual ~AAIBaseClass();
 
 

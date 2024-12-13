@@ -33,6 +33,12 @@
     <Filter Include="Source\PortfolioPiece1">
       <UniqueIdentifier>{EB79D484-1CED-3AD5-A39E-2A79764A9A9E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\MoveToPlayer.cpp">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\MoveToPlayer.h">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClInclude>
     <None Include="..\..\Source\PortfolioPiece1\PortfolioPiece1.Build.cs">
       <Filter>Source\PortfolioPiece1</Filter>
     </None>

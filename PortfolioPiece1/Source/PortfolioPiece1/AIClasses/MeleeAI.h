@@ -14,7 +14,7 @@ UCLASS()
 class PORTFOLIOPIECE1_API AMeleeAI : public AAIBaseClass
 {
 	GENERATED_BODY()
+	AMeleeAI();
 
 	virtual void BeginPlay() override;
-	virtual void Move() override;
 };

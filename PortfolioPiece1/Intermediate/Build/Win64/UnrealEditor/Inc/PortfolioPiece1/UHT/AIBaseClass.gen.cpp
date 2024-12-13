@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeAIBaseClass() {}
 		0,
 		0,
 		0,
-		0x009000A4u,
+		0x009000A5u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAIBaseClass_Statics::Class_MetaDataParams), Z_Construct_UClass_AAIBaseClass_Statics::Class_MetaDataParams)
 	};
 	UClass* Z_Construct_UClass_AAIBaseClass()
@@ -80,9 +80,9 @@ void EmptyLinkFunctionForGeneratedCodeAIBaseClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_AIBaseClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIBaseClass, AAIBaseClass::StaticClass, TEXT("AAIBaseClass"), &Z_Registration_Info_UClass_AAIBaseClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIBaseClass), 1231399002U) },
+		{ Z_Construct_UClass_AAIBaseClass, AAIBaseClass::StaticClass, TEXT("AAIBaseClass"), &Z_Registration_Info_UClass_AAIBaseClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIBaseClass), 1296395147U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_AIBaseClass_h_4011610025(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_AIBaseClass_h_2064724892(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_AIBaseClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_AIBaseClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

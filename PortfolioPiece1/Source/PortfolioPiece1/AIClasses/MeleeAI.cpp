@@ -2,13 +2,12 @@
 #include "MeleeAI.h"
 #include "MeleeAIController.h"
 
-void AMeleeAI::BeginPlay()
+AMeleeAI::AMeleeAI()
 {
-	Super::BeginPlay();
 	AIControllerClass = AMeleeAIController::StaticClass();
 }
 
-void AMeleeAI::Move()
+void AMeleeAI::BeginPlay()
 {
-	Super::Move();
+	Super::BeginPlay();
 }

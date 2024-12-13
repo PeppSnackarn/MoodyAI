@@ -76,7 +76,6 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 	{
 		return AMeleeAI::StaticClass();
 	}
-	AMeleeAI::AMeleeAI() {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMeleeAI);
 	AMeleeAI::~AMeleeAI() {}
 	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_Statics
@@ -84,9 +83,9 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 102350682U) },
+		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 1050807456U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_1019046134(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_3414522461(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

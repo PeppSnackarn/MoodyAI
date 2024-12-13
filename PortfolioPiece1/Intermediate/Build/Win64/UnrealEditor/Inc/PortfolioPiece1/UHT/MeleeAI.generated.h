@@ -29,8 +29,6 @@ public: \
 
 
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAI_h_16_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AMeleeAI(); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMeleeAI(AMeleeAI&&); \

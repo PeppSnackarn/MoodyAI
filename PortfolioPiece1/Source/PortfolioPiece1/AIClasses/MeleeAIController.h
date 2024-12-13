@@ -14,11 +14,14 @@ class PORTFOLIOPIECE1_API AMeleeAIController : public AAIController
 {
 	GENERATED_BODY()
 protected:
-	AMeleeAIController();
 	UBehaviorTree* CreateBehaviorTree();
+	void AssembleBehaviorTree(UBehaviorTree* Tree);
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaSeconds) override;
 
 private:
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere)
 	UBehaviorTree* BehaviorTree = nullptr;
+	UPROPERTY(VisibleAnywhere)
+	UBlackboardComponent* BlackBoardComp = nullptr;
 };

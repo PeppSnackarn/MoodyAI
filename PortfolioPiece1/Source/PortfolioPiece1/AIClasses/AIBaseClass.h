@@ -9,7 +9,7 @@
 class AAIController;
 class UGameInst;
 
-UCLASS()
+UCLASS(Abstract)
 class PORTFOLIOPIECE1_API AAIBaseClass : public ACharacter
 {
 	GENERATED_BODY()

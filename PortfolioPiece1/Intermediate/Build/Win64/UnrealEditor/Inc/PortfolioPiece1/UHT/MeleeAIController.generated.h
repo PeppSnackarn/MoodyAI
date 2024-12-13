@@ -29,6 +29,8 @@ public: \
 
 
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AIClasses_MeleeAIController_h_15_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API AMeleeAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMeleeAIController(AMeleeAIController&&); \
@@ -36,7 +38,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AMeleeAIController); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMeleeAIController); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMeleeAIController) \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMeleeAIController) \
 	NO_API virtual ~AMeleeAIController();
 
 
