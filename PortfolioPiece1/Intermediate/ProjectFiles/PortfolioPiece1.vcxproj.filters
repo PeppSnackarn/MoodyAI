@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PortfolioPiece1.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PortfolioPiece1.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PortfolioPiece1Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PortfolioPiece1">
+      <UniqueIdentifier>{EB79D484-1CED-3AD5-A39E-2A79764A9A9E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PortfolioPiece1\PortfolioPiece1.Build.cs">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\PortfolioPiece1.cpp">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\PortfolioPiece1.h">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\PortfolioPiece1Character.cpp">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\PortfolioPiece1Character.h">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\PortfolioPiece1GameMode.cpp">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\PortfolioPiece1GameMode.h">
+      <Filter>Source\PortfolioPiece1</Filter>
+    </ClInclude>
+    <Filter Include="Source\PortfolioPiece1\AI Classes">
+      <UniqueIdentifier>{F177B75F-C4B1-35F5-B32D-0CC5365AE143}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\AIBaseClass.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\AIBaseClass.h">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAI.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAI.h">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.h">
+      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    </ClInclude>
+    <Filter Include="Source\PortfolioPiece1\AI Tasks">
+      <UniqueIdentifier>{058B64C2-9A38-3D81-85FD-2AE14A871D55}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\IdleTask.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\IdleTask.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClInclude>
+    <Filter Include="Source\PortfolioPiece1\Systems">
+      <UniqueIdentifier>{D786D777-32E9-3767-B49B-6421904D6956}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\AITokenSystem.cpp">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\AITokenSystem.h">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\GameInst.cpp">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\GameInst.h">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

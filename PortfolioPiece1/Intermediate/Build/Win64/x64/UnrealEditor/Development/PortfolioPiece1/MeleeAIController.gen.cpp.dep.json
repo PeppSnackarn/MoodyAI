@@ -1,0 +1,28 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\meleeaicontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
+            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\source\\portfoliopiece1\\ai classes\\meleeaicontroller.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\aicontroller.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\aitypes.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\navigationsystem\\public\\navigationsystemtypes.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\ai\\navigationsystemconfig.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navigationsystemconfig.generated.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aitypes.generated.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\perception\\aiperceptionlistenerinterface.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aiperceptionlistenerinterface.generated.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\genericteamagentinterface.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\engine\\public\\visuallogger\\visualloggerdebugsnapshotinterface.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\visualloggerdebugsnapshotinterface.generated.h",
+            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aicontroller.generated.h",
+            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\meleeaicontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
