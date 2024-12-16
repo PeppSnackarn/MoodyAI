@@ -31,7 +31,6 @@ void AAIBaseClass::Tick(float DeltaTime)
 void AAIBaseClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 
 void AAIBaseClass::SetState(bool state)

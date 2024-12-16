@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\GitRepos\\PortfolioPiece1\\PortfolioPiece1\\Source\\PortfolioPiece1\\PortfolioPiece1.Build.cs",
-		"E:\\GitRepos\\PortfolioPiece1\\PortfolioPiece1\\Source\\PortfolioPiece1.Target.cs",
-		"E:\\GitRepos\\PortfolioPiece1\\PortfolioPiece1\\Source\\PortfolioPiece1Editor.Target.cs"
+		"C:\\Users\\nikodemius.ivarsson\\Documents\\GitHub\\Portfolio1\\PortfolioPiece1\\Source\\PortfolioPiece1\\PortfolioPiece1.Build.cs",
+		"C:\\Users\\nikodemius.ivarsson\\Documents\\GitHub\\Portfolio1\\PortfolioPiece1\\Source\\PortfolioPiece1.Target.cs",
+		"C:\\Users\\nikodemius.ivarsson\\Documents\\GitHub\\Portfolio1\\PortfolioPiece1\\Source\\PortfolioPiece1Editor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }

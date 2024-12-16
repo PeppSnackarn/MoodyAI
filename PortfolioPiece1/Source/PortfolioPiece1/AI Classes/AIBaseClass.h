@@ -6,6 +6,8 @@
 #include "AIBaseClass.generated.h"
 
 
+class UHealthComponent;
+class UHealthSystem;
 class AAIController;
 class UGameInst;
 

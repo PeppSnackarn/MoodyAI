@@ -16,10 +16,45 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_APortfolioPiece1Character();
 	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_APortfolioPiece1Character_NoRegister();
+	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_PortfolioPiece1();
 // End Cross Module References
+	DEFINE_FUNCTION(APortfolioPiece1Character::execDeath)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Death();
+		P_NATIVE_END;
+	}
 	void APortfolioPiece1Character::StaticRegisterNativesAPortfolioPiece1Character()
 	{
+		UClass* Class = APortfolioPiece1Character::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Death", &APortfolioPiece1Character::execDeath },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PortfolioPiece1Character.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortfolioPiece1Character, nullptr, "Death", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortfolioPiece1Character_Death()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortfolioPiece1Character_Death_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(APortfolioPiece1Character);
 	UClass* Z_Construct_UClass_APortfolioPiece1Character_NoRegister()
@@ -29,6 +64,7 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 	struct Z_Construct_UClass_APortfolioPiece1Character_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -56,6 +92,10 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HealthComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_HealthComp;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -65,6 +105,10 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_PortfolioPiece1,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_APortfolioPiece1Character_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APortfolioPiece1Character_Death, "Death" }, // 1668193500
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortfolioPiece1Character_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
@@ -158,6 +202,14 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortfolioPiece1Character, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_LookAction_MetaData), Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_LookAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData[] = {
+		{ "Category", "PortfolioPiece1Character" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PortfolioPiece1Character.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp = { "HealthComp", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortfolioPiece1Character, HealthComp), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData), Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APortfolioPiece1Character_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_FollowCamera,
@@ -165,6 +217,7 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APortfolioPiece1Character_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APortfolioPiece1Character>::IsAbstract,
@@ -174,11 +227,11 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_APortfolioPiece1Character_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::PropPointers),
 		0,
 		0x008000A4u,
@@ -199,15 +252,15 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APortfolioPiece1Character);
 	APortfolioPiece1Character::~APortfolioPiece1Character() {}
-	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortfolioPiece1Character, APortfolioPiece1Character::StaticClass, TEXT("APortfolioPiece1Character"), &Z_Registration_Info_UClass_APortfolioPiece1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1Character), 3213541800U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_APortfolioPiece1Character, APortfolioPiece1Character::StaticClass, TEXT("APortfolioPiece1Character"), &Z_Registration_Info_UClass_APortfolioPiece1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1Character), 3478290423U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_1666877451(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_1255415161(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

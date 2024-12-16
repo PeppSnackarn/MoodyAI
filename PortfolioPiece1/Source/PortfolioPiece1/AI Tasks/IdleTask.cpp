@@ -5,6 +5,7 @@
 
 #include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "GameFramework/Character.h"
 
 UIdleTask::UIdleTask()
 {
@@ -15,6 +16,11 @@ EBTNodeResult::Type UIdleTask::ExecuteTask(UBehaviorTreeComponent& OwnerComp, ui
 {
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
+	if(FVector::Distance(AIController->GetCharacter()->GetActorLocation(), Blackboard->GetValueAsVector("Player Location")) < 1500)
+	{
+		GEngine->AddOnScreenDebugMessage(0, 1, FColor::Red, "In Range", false);
+		return EBTNodeResult::Succeeded;
+	}
 	
 	return EBTNodeResult::Failed;
 }

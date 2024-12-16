@@ -78,6 +78,12 @@
     <Filter Include="Source\PortfolioPiece1\AI Tasks">
       <UniqueIdentifier>{058B64C2-9A38-3D81-85FD-2AE14A871D55}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\AttackPlayer.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\AttackPlayer.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\IdleTask.cpp">
       <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
     </ClCompile>
@@ -103,6 +109,12 @@
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\GameInst.h">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\HealthComponent.cpp">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\HealthComponent.h">
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClInclude>
   </ItemGroup>

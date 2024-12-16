@@ -7,6 +7,8 @@
 #include "Logging/LogMacros.h"
 #include "PortfolioPiece1Character.generated.h"
 
+class UHealthComponent;
+class UHealthSystem;
 class USpringArmComponent;
 class UCameraComponent;
 class UInputMappingContext;
@@ -46,7 +48,9 @@ class APortfolioPiece1Character : public ACharacter
 
 public:
 	APortfolioPiece1Character();
-	
+
+	UPROPERTY(VisibleAnywhere) // Needed to be seen in editor
+	UHealthComponent* HealthComp = nullptr;
 
 protected:
 
@@ -55,6 +59,9 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+
+	UFUNCTION()
+	void Death();
 			
 
 protected:

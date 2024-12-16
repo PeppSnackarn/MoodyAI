@@ -8,9 +8,10 @@
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Object.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Vector.h"
 #include "BehaviorTree/Composites/BTComposite_Selector.h"
-#include "BehaviorTree/Tasks/BTTask_MoveTo.h"
+#include "BehaviorTree/Composites/BTComposite_Sequence.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
+#include "PortfolioPiece1/AI Tasks/IdleTask.h"
 #include "PortfolioPiece1/AI Tasks/MoveToPlayer.h"
 
 UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
@@ -22,13 +23,18 @@ UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 
 	FBlackboardEntry PlayerRef;
 	PlayerRef.EntryName = "Player";
-	PlayerRef.KeyType = NewObject<UBlackboardKeyType_Vector>();
+	PlayerRef.KeyType = NewObject<UBlackboardKeyType_Object>();
 	BlackboardComponent->Keys.Add(PlayerRef);
+
+	FBlackboardEntry PlayerLocation;
+	PlayerLocation.EntryName = "Player Location";
+	PlayerLocation.KeyType = NewObject<UBlackboardKeyType_Vector>();
+	BlackboardComponent->Keys.Add(PlayerLocation);
 	
 	//Set blackboard data
 	BehaviorT->BlackboardAsset = BlackboardComponent;
 	//Define root node
-	UBTCompositeNode* RootNode = NewObject<UBTComposite_Selector>(BehaviorT);// ERROR
+	UBTCompositeNode* RootNode = NewObject<UBTComposite_Sequence>(BehaviorT);
 	BehaviorT->RootNode = RootNode;
 
 	return BehaviorT;
@@ -44,7 +50,12 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild MoveToCompChild;
 		MoveToCompChild.ChildTask = MoveToTask;
 
+		UIdleTask* IdleTask = NewObject<UIdleTask>(BehaviorTree);
+		FBTCompositeChild IdleTaskCompChild;
+		IdleTaskCompChild.ChildTask = IdleTask;
+
 		//Attach to root
+		RootNode->Children.Add(IdleTaskCompChild);
 		RootNode->Children.Add(MoveToCompChild);
 
 		//Add decorators to task
@@ -54,17 +65,13 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 void AMeleeAIController::BeginPlay()
 {
 	Super::BeginPlay();
-	BehaviorTree = CreateBehaviorTree(); // ERROR
+	BehaviorTree = CreateBehaviorTree();
 	AssembleBehaviorTree(BehaviorTree);
 	if(BehaviorTree)
 	{
-		if(BehaviorTree->RootNode != nullptr)
-		{
-			GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "Has Root", true);
-		}
 		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "Assigning BT", true);
 		UseBlackboard(BehaviorTree->GetBlackboardAsset(), BlackBoardComp); // Uses the blackboarddata attached to the BT and creates a BBComp
-		BlackBoardComp->SetValueAsVector("Player", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
+		BlackBoardComp->SetValueAsObject("Player", UGameplayStatics::GetPlayerCharacter(GetWorld(),0));
 		RunBehaviorTree(BehaviorTree);
 	}
 }
@@ -72,7 +79,7 @@ void AMeleeAIController::BeginPlay()
 void AMeleeAIController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	BlackBoardComp->SetValueAsVector("Player", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
+	BlackBoardComp->SetValueAsVector("Player Location", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
 }
 
 

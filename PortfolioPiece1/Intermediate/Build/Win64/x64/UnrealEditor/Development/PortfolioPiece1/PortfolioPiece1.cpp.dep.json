@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\source\\portfoliopiece1\\portfoliopiece1.cpp",
+        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\portfoliopiece1.cpp",
         "ProvidedModule": "",
-        "PCH": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "PCH": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
         "Includes": [
-            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
-            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\source\\portfoliopiece1\\portfoliopiece1.h"
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\portfoliopiece1.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

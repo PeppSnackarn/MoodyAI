@@ -1,9 +1,11 @@
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1Character.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\MeleeAIController.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\Systems\AITokenSystem.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1GameMode.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\AIBaseClass.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\Systems\GameInst.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\MeleeAI.h
-E:\GitRepos\PortfolioPiece1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\IdleTask.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1GameMode.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\AIBaseClass.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1Character.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\MeleeAIController.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\IdleTask.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\AttackPlayer.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\AITokenSystem.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\GameInst.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\MeleeAI.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\HealthComponent.h

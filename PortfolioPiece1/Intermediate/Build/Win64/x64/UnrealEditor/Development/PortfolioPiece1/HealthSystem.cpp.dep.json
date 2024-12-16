@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\healthsystem.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\healthsystem.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\healthsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
