@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/AI/Behavior/BT_Melee.uasset"
 			]
 		}
 	]

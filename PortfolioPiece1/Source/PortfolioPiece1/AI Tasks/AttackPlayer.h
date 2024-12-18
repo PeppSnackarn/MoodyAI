@@ -13,6 +13,7 @@ UCLASS()
 class PORTFOLIOPIECE1_API UAttackPlayer : public UBTTaskNode
 {
 	GENERATED_BODY()
+	UAttackPlayer();
 
 protected:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;

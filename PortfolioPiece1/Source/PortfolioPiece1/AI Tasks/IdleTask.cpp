@@ -9,7 +9,7 @@
 
 UIdleTask::UIdleTask()
 {
-	NodeName = "Move to Player";
+	NodeName = "Get player in range";
 }
 
 EBTNodeResult::Type UIdleTask::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)

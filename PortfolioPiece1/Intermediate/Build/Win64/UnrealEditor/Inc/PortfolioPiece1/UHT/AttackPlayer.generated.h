@@ -29,8 +29,6 @@ public: \
 
 
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UAttackPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UAttackPlayer(UAttackPlayer&&); \
@@ -38,7 +36,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UAttackPlayer); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAttackPlayer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAttackPlayer) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UAttackPlayer) \
 	NO_API virtual ~UAttackPlayer();
 
 

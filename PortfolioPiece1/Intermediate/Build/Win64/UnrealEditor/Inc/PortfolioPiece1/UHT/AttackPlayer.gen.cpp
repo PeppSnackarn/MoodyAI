@@ -75,7 +75,6 @@ void EmptyLinkFunctionForGeneratedCodeAttackPlayer() {}
 	{
 		return UAttackPlayer::StaticClass();
 	}
-	UAttackPlayer::UAttackPlayer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAttackPlayer);
 	UAttackPlayer::~UAttackPlayer() {}
 	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_Statics

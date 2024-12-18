@@ -205,8 +205,14 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData[] = {
 		{ "Category", "PortfolioPiece1Character" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Needed to be seen in editor\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "PortfolioPiece1Character.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Needed to be seen in editor" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp = { "HealthComp", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortfolioPiece1Character, HealthComp), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData), Z_Construct_UClass_APortfolioPiece1Character_Statics::NewProp_HealthComp_MetaData) };
@@ -257,9 +263,9 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1Character() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortfolioPiece1Character, APortfolioPiece1Character::StaticClass, TEXT("APortfolioPiece1Character"), &Z_Registration_Info_UClass_APortfolioPiece1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1Character), 3478290423U) },
+		{ Z_Construct_UClass_APortfolioPiece1Character, APortfolioPiece1Character::StaticClass, TEXT("APortfolioPiece1Character"), &Z_Registration_Info_UClass_APortfolioPiece1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1Character), 1675837656U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_1255415161(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_3054361281(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1Character_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

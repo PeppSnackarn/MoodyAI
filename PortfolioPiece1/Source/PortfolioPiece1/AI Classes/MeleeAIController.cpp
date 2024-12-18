@@ -11,6 +11,7 @@
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
+#include "PortfolioPiece1/AI Tasks/AttackPlayer.h"
 #include "PortfolioPiece1/AI Tasks/IdleTask.h"
 #include "PortfolioPiece1/AI Tasks/MoveToPlayer.h"
 
@@ -54,9 +55,20 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild IdleTaskCompChild;
 		IdleTaskCompChild.ChildTask = IdleTask;
 
-		//Attach to root
+		UAttackPlayer* AttackTask = NewObject<UAttackPlayer>(BehaviorTree);
+		FBTCompositeChild AttackTaskCompChild;
+		AttackTaskCompChild.ChildTask = AttackTask;
+
+		//Create Sequence & selector nodes
+		UBTComposite_Sequence* Sequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
+		Sequence->Children.Add(MoveToCompChild);
+		Sequence->Children.Add(AttackTaskCompChild);
+		FBTCompositeChild Sequence1Node;
+		Sequence1Node.ChildComposite = Sequence;
+
+		//Assemble tasks
 		RootNode->Children.Add(IdleTaskCompChild);
-		RootNode->Children.Add(MoveToCompChild);
+		RootNode->Children.Add(Sequence1Node);
 
 		//Add decorators to task
 	}
