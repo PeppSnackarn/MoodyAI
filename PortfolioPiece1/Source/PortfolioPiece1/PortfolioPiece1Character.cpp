@@ -136,5 +136,5 @@ void APortfolioPiece1Character::Look(const FInputActionValue& Value)
 
 void APortfolioPiece1Character::Death()
 {
-	
+	UE_LOG(LogTemp, Log, TEXT("Has died"))
 }
