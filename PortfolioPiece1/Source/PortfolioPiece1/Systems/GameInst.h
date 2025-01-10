@@ -3,9 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EnemyManager.h"
 #include "Engine/GameInstance.h"
 #include "GameInst.generated.h"
 
+class AEnemyManager;
 class AAITokenSystem;
 /**
  * 
@@ -18,6 +20,8 @@ protected:
 	virtual void Init() override;
 private:
 	AAITokenSystem* TokenSystem = nullptr;
+	AEnemyManager* EnemyManager = nullptr;
 public:
 	inline AAITokenSystem* GetTokenSystem() const { return TokenSystem; }
+	inline AEnemyManager* GetEnemyManager() const { return EnemyManager; }
 };

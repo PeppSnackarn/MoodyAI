@@ -30,4 +30,8 @@ public:
 	void SetState(bool state);
 	UGameInst* GameInstance = nullptr;
 
+public:
+	UPROPERTY(VisibleAnywhere)
+	bool agressive;
+
 };

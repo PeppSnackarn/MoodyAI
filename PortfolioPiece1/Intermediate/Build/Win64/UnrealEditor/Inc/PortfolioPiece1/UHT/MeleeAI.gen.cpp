@@ -83,9 +83,9 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 474126602U) },
+		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 39830903U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_4035166208(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_2840447217(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

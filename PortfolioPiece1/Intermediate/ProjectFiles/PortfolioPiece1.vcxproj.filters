@@ -96,6 +96,12 @@
     <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.h">
       <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\RandomRoamTask.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\RandomRoamTask.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    </ClInclude>
     <Filter Include="Source\PortfolioPiece1\Systems">
       <UniqueIdentifier>{D786D777-32E9-3767-B49B-6421904D6956}</UniqueIdentifier>
     </Filter>
@@ -103,6 +109,12 @@
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\AITokenSystem.h">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\EnemyManager.cpp">
+      <Filter>Source\PortfolioPiece1\Systems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\EnemyManager.h">
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\GameInst.cpp">

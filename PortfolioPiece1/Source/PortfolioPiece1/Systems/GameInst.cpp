@@ -8,5 +8,6 @@
 void UGameInst::Init()
 {
 	Super::Init();
-	TokenSystem = NewObject<AAITokenSystem>(this, AAITokenSystem::StaticClass()); // Creates a static class???
+	TokenSystem = NewObject<AAITokenSystem>(this, AAITokenSystem::StaticClass()); //Doesn't play its own beginplay & tick
+	EnemyManager = NewObject<AEnemyManager>(this, AEnemyManager::StaticClass()); //Doesn't play its own beginplay & tick
 }
