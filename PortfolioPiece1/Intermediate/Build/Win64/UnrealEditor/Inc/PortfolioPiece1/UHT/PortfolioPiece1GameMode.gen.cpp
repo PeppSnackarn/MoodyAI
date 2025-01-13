@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/PortfolioPiece1GameMode.h"
+#include "PortfolioPiece1/GameMode & Stuff/PortfolioPiece1GameMode.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePortfolioPiece1GameMode() {}
 // Cross Module References
@@ -39,8 +39,8 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1GameMode() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortfolioPiece1GameMode_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "PortfolioPiece1GameMode.h" },
-		{ "ModuleRelativePath", "PortfolioPiece1GameMode.h" },
+		{ "IncludePath", "GameMode & Stuff/PortfolioPiece1GameMode.h" },
+		{ "ModuleRelativePath", "GameMode & Stuff/PortfolioPiece1GameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -76,15 +76,15 @@ void EmptyLinkFunctionForGeneratedCodePortfolioPiece1GameMode() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APortfolioPiece1GameMode);
 	APortfolioPiece1GameMode::~APortfolioPiece1GameMode() {}
-	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1GameMode_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_PortfolioPiece1GameMode_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1GameMode_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortfolioPiece1GameMode, APortfolioPiece1GameMode::StaticClass, TEXT("APortfolioPiece1GameMode"), &Z_Registration_Info_UClass_APortfolioPiece1GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1GameMode), 2158576222U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_PortfolioPiece1GameMode_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_APortfolioPiece1GameMode, APortfolioPiece1GameMode::StaticClass, TEXT("APortfolioPiece1GameMode"), &Z_Registration_Info_UClass_APortfolioPiece1GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortfolioPiece1GameMode), 324197112U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1GameMode_h_1397320229(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1GameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_PortfolioPiece1GameMode_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_PortfolioPiece1GameMode_h_1457370707(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_PortfolioPiece1GameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_PortfolioPiece1GameMode_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

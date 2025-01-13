@@ -48,12 +48,6 @@
     <ClInclude Include="..\..\Source\PortfolioPiece1\PortfolioPiece1Character.h">
       <Filter>Source\PortfolioPiece1</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\PortfolioPiece1GameMode.cpp">
-      <Filter>Source\PortfolioPiece1</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\PortfolioPiece1GameMode.h">
-      <Filter>Source\PortfolioPiece1</Filter>
-    </ClInclude>
     <Filter Include="Source\PortfolioPiece1\AI Classes">
       <UniqueIdentifier>{F177B75F-C4B1-35F5-B32D-0CC5365AE143}</UniqueIdentifier>
     </Filter>
@@ -102,6 +96,21 @@
     <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\RandomRoamTask.h">
       <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
     </ClInclude>
+    <Filter Include="Source\PortfolioPiece1\GameMode &amp; Stuff">
+      <UniqueIdentifier>{B1A3A538-5CD1-396D-BC9B-0CFA73911BFF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\GameMode &amp; Stuff\GameInst.cpp">
+      <Filter>Source\PortfolioPiece1\GameMode &amp; Stuff</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\GameMode &amp; Stuff\GameInst.h">
+      <Filter>Source\PortfolioPiece1\GameMode &amp; Stuff</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\GameMode &amp; Stuff\PortfolioPiece1GameMode.cpp">
+      <Filter>Source\PortfolioPiece1\GameMode &amp; Stuff</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\GameMode &amp; Stuff\PortfolioPiece1GameMode.h">
+      <Filter>Source\PortfolioPiece1\GameMode &amp; Stuff</Filter>
+    </ClInclude>
     <Filter Include="Source\PortfolioPiece1\Systems">
       <UniqueIdentifier>{D786D777-32E9-3767-B49B-6421904D6956}</UniqueIdentifier>
     </Filter>
@@ -115,12 +124,6 @@
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\EnemyManager.h">
-      <Filter>Source\PortfolioPiece1\Systems</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\GameInst.cpp">
-      <Filter>Source\PortfolioPiece1\Systems</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\Systems\GameInst.h">
       <Filter>Source\PortfolioPiece1\Systems</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PortfolioPiece1\Systems\HealthComponent.cpp">

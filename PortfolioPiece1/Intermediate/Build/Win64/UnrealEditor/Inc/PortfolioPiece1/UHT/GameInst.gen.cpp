@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/Systems/GameInst.h"
+#include "PortfolioPiece1/GameMode & Stuff/GameInst.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGameInst() {}
 // Cross Module References
@@ -41,8 +41,8 @@ void EmptyLinkFunctionForGeneratedCodeGameInst() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "Systems/GameInst.h" },
-		{ "ModuleRelativePath", "Systems/GameInst.h" },
+		{ "IncludePath", "GameMode & Stuff/GameInst.h" },
+		{ "ModuleRelativePath", "GameMode & Stuff/GameInst.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGameInst_Statics::StaticCppClassTypeInfo = {
@@ -78,15 +78,15 @@ void EmptyLinkFunctionForGeneratedCodeGameInst() {}
 	UGameInst::UGameInst(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGameInst);
 	UGameInst::~UGameInst() {}
-	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_GameInst_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_GameInst_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_GameInst_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGameInst, UGameInst::StaticClass, TEXT("UGameInst"), &Z_Registration_Info_UClass_UGameInst, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameInst), 446987632U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_GameInst_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGameInst, UGameInst::StaticClass, TEXT("UGameInst"), &Z_Registration_Info_UClass_UGameInst, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGameInst), 3229169367U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_GameInst_h_3000414851(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_GameInst_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_GameInst_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_GameInst_h_2663782263(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_GameInst_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_GameMode___Stuff_GameInst_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

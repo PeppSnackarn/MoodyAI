@@ -1,17 +1,26 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\gameinst.cpp",
+        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\gamemode & stuff\\gameinst.cpp",
         "ProvidedModule": "",
         "PCH": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
         "Includes": [
             "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
-            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\gameinst.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\gamemode & stuff\\gameinst.h",
             "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\enemymanager.h",
             "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\enemymanager.generated.h",
             "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\gameinst.generated.h",
             "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\systems\\aitokensystem.h",
-            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aitokensystem.generated.h"
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aitokensystem.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

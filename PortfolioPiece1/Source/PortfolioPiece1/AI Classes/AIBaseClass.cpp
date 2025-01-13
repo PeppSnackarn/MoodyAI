@@ -1,5 +1,5 @@
 #include "AIBaseClass.h"
-#include "PortfolioPiece1/Systems/GameInst.h"
+#include "PortfolioPiece1/GameMode & Stuff/GameInst.h"
 
 
 AAIBaseClass::AAIBaseClass()

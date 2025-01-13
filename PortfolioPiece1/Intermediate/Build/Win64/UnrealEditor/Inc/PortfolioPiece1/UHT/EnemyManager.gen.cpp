@@ -9,20 +9,20 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 // Cross Module References
-	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
-	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_UEnemyManager();
-	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_UEnemyManager_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_AEnemyManager();
+	PORTFOLIOPIECE1_API UClass* Z_Construct_UClass_AEnemyManager_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_PortfolioPiece1();
 // End Cross Module References
-	void UEnemyManager::StaticRegisterNativesUEnemyManager()
+	void AEnemyManager::StaticRegisterNativesAEnemyManager()
 	{
 	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UEnemyManager);
-	UClass* Z_Construct_UClass_UEnemyManager_NoRegister()
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AEnemyManager);
+	UClass* Z_Construct_UClass_AEnemyManager_NoRegister()
 	{
-		return UEnemyManager::StaticClass();
+		return AEnemyManager::StaticClass();
 	}
-	struct Z_Construct_UClass_UEnemyManager_Statics
+	struct Z_Construct_UClass_AEnemyManager_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
 #if WITH_METADATA
@@ -31,24 +31,24 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
-	UObject* (*const Z_Construct_UClass_UEnemyManager_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_UActorComponent,
+	UObject* (*const Z_Construct_UClass_AEnemyManager_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_PortfolioPiece1,
 	};
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyManager_Statics::DependentSingletons) < 16);
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::DependentSingletons) < 16);
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEnemyManager_Statics::Class_MetaDataParams[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyManager_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
 		{ "IncludePath", "Systems/EnemyManager.h" },
 		{ "ModuleRelativePath", "Systems/EnemyManager.h" },
 	};
 #endif
-	const FCppClassTypeInfoStatic Z_Construct_UClass_UEnemyManager_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UEnemyManager>::IsAbstract,
+	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemyManager_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<AEnemyManager>::IsAbstract,
 	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_UEnemyManager_Statics::ClassParams = {
-		&UEnemyManager::StaticClass,
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_AEnemyManager_Statics::ClassParams = {
+		&AEnemyManager::StaticClass,
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
@@ -59,31 +59,31 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		0,
 		0,
 		0,
-		0x00B000A4u,
-		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyManager_Statics::Class_MetaDataParams), Z_Construct_UClass_UEnemyManager_Statics::Class_MetaDataParams)
+		0x009000A4u,
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::Class_MetaDataParams), Z_Construct_UClass_AEnemyManager_Statics::Class_MetaDataParams)
 	};
-	UClass* Z_Construct_UClass_UEnemyManager()
+	UClass* Z_Construct_UClass_AEnemyManager()
 	{
-		if (!Z_Registration_Info_UClass_UEnemyManager.OuterSingleton)
+		if (!Z_Registration_Info_UClass_AEnemyManager.OuterSingleton)
 		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UEnemyManager.OuterSingleton, Z_Construct_UClass_UEnemyManager_Statics::ClassParams);
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AEnemyManager.OuterSingleton, Z_Construct_UClass_AEnemyManager_Statics::ClassParams);
 		}
-		return Z_Registration_Info_UClass_UEnemyManager.OuterSingleton;
+		return Z_Registration_Info_UClass_AEnemyManager.OuterSingleton;
 	}
-	template<> PORTFOLIOPIECE1_API UClass* StaticClass<UEnemyManager>()
+	template<> PORTFOLIOPIECE1_API UClass* StaticClass<AEnemyManager>()
 	{
-		return UEnemyManager::StaticClass();
+		return AEnemyManager::StaticClass();
 	}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(UEnemyManager);
-	UEnemyManager::~UEnemyManager() {}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AEnemyManager);
+	AEnemyManager::~AEnemyManager() {}
 	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyManager, UEnemyManager::StaticClass, TEXT("UEnemyManager"), &Z_Registration_Info_UClass_UEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyManager), 612413533U) },
+		{ Z_Construct_UClass_AEnemyManager, AEnemyManager::StaticClass, TEXT("AEnemyManager"), &Z_Registration_Info_UClass_AEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyManager), 2197975605U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_1551159922(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_206075941(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

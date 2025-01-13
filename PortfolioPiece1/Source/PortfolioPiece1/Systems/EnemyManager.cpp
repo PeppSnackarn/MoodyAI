@@ -20,11 +20,13 @@ void AEnemyManager::FindAllEnemies()
 {
 	enemies.Empty();
 	TSubclassOf<AAIBaseClass> EnemyClass;
+	EnemyClass = AAIBaseClass::StaticClass();
 	TArray<AActor*> foundActors;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), EnemyClass, foundActors);
 
 	for (AActor* Actor : foundActors)
 	{
+		UE_LOG(LogTemp, Log, TEXT("FOUND A ACTOR"))
 		if(AAIBaseClass* enemy = Cast<AAIBaseClass>(Actor))
 		{
 			enemies.Add(enemy);

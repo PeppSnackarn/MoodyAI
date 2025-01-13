@@ -21,23 +21,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_14_ACCESSORS
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_14_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUEnemyManager(); \
-	friend struct Z_Construct_UClass_UEnemyManager_Statics; \
+	static void StaticRegisterNativesAEnemyManager(); \
+	friend struct Z_Construct_UClass_AEnemyManager_Statics; \
 public: \
-	DECLARE_CLASS(UEnemyManager, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
-	DECLARE_SERIALIZER(UEnemyManager)
+	DECLARE_CLASS(AEnemyManager, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
+	DECLARE_SERIALIZER(AEnemyManager)
 
 
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UEnemyManager(UEnemyManager&&); \
-	NO_API UEnemyManager(const UEnemyManager&); \
+	NO_API AEnemyManager(AEnemyManager&&); \
+	NO_API AEnemyManager(const AEnemyManager&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UEnemyManager); \
-	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEnemyManager); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UEnemyManager) \
-	NO_API virtual ~UEnemyManager();
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AEnemyManager); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEnemyManager); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemyManager) \
+	NO_API virtual ~AEnemyManager();
 
 
 #define FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_11_PROLOG
@@ -55,7 +55,7 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> PORTFOLIOPIECE1_API UClass* StaticClass<class UEnemyManager>();
+template<> PORTFOLIOPIECE1_API UClass* StaticClass<class AEnemyManager>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h
