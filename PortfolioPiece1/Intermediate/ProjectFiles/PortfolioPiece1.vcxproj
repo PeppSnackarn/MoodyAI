@@ -146,6 +146,12 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.h"/>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.h"/>
     <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\AttackPlayer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>

@@ -3,17 +3,18 @@
 
 #include "MeleeAIController.h"
 
+#include "AIBaseClass.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
-#include "BehaviorTree/BTDecorator.h"
+#include "BehaviorTree/Blackboard/BlackboardKeyType_Bool.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Object.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Vector.h"
 #include "BehaviorTree/Composites/BTComposite_Selector.h"
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
-#include "BehaviorTree/Decorators/BTDecorator_ConditionalLoop.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Tasks/AttackPlayer.h"
+#include "PortfolioPiece1/AI Decorators/BTDecorator_IsAgressive.h"
 #include "PortfolioPiece1/AI Tasks/IdleTask.h"
 #include "PortfolioPiece1/AI Tasks/MoveToPlayer.h"
 
@@ -33,6 +34,11 @@ UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 	PlayerLocation.EntryName = "Player Location";
 	PlayerLocation.KeyType = NewObject<UBlackboardKeyType_Vector>();
 	BlackboardComponent->Keys.Add(PlayerLocation);
+
+	FBlackboardEntry AgressiveState;
+	AgressiveState.EntryName = "Is Agressive";
+	AgressiveState.KeyType = NewObject<UBlackboardKeyType_Bool>();
+	BlackboardComponent->Keys.Add(AgressiveState);
 	
 	//Set blackboard data
 	BehaviorT->BlackboardAsset = BlackboardComponent;
@@ -68,20 +74,23 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild Sequence1Node;
 		Sequence1Node.ChildComposite = Sequence;
 
-		//Assemble tasks
+		//Create decorators
+		UBTDecorator_IsAgressive* agressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
+		agressiveDecorator->conditionToCheck = true;
+		
+		//Add decorators to nodes
+		Sequence1Node.Decorators.Add(agressiveDecorator);
+
+		//Assemble Nodes
 		RootNode->Children.Add(IdleTaskCompChild);
 		RootNode->Children.Add(Sequence1Node);
-
-		//Create decorators
-		UBTDecorator_ConditionalLoop isAgressive;
-		//Add decorators to task
-		Sequence1Node.Decorators.Add(isAgressive);
 	}
 }
 
 void AMeleeAIController::BeginPlay()
 {
 	Super::BeginPlay();
+	selfRef = Cast<AAIBaseClass>(GetPawn());
 	BehaviorTree = CreateBehaviorTree();
 	AssembleBehaviorTree(BehaviorTree);
 	if(BehaviorTree)
@@ -89,6 +98,7 @@ void AMeleeAIController::BeginPlay()
 		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "Assigning BT", true);
 		UseBlackboard(BehaviorTree->GetBlackboardAsset(), BlackBoardComp); // Uses the blackboarddata attached to the BT and creates a BBComp
 		BlackBoardComp->SetValueAsObject("Player", UGameplayStatics::GetPlayerCharacter(GetWorld(),0));
+		BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
 		RunBehaviorTree(BehaviorTree);
 	}
 }
@@ -97,6 +107,7 @@ void AMeleeAIController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 	BlackBoardComp->SetValueAsVector("Player Location", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
+	BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
 }
 
 

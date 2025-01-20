@@ -69,6 +69,15 @@
     <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.h">
       <Filter>Source\PortfolioPiece1\AI Classes</Filter>
     </ClInclude>
+    <Filter Include="Source\PortfolioPiece1\AI Decorators">
+      <UniqueIdentifier>{72D42BFF-B3D4-3492-A8A0-2695E5DDF067}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.cpp">
+      <Filter>Source\PortfolioPiece1\AI Decorators</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.h">
+      <Filter>Source\PortfolioPiece1\AI Decorators</Filter>
+    </ClInclude>
     <Filter Include="Source\PortfolioPiece1\AI Tasks">
       <UniqueIdentifier>{058B64C2-9A38-3D81-85FD-2AE14A871D55}</UniqueIdentifier>
     </Filter>

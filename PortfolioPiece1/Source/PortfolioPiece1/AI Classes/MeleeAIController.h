@@ -6,6 +6,7 @@
 #include "AIController.h"
 #include "MeleeAIController.generated.h"
 
+class AAIBaseClass;
 /**
  * 
  */
@@ -24,4 +25,5 @@ private:
 	UBehaviorTree* BehaviorTree = nullptr;
 	UPROPERTY(VisibleAnywhere)
 	UBlackboardComponent* BlackBoardComp = nullptr;
+	AAIBaseClass* selfRef = nullptr;
 };

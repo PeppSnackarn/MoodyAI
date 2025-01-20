@@ -72,5 +72,5 @@ void AEnemyManager::SetAgressiveEnemies()
 void AEnemyManager::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	UE_LOG(LogTemp, Log, TEXT("Amount of enemies = %i"), enemies.Num())
+	//UE_LOG(LogTemp, Log, TEXT("Amount of enemies = %i"), enemies.Num())
 }
