@@ -5,10 +5,12 @@
 
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BTDecorator.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Object.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Vector.h"
 #include "BehaviorTree/Composites/BTComposite_Selector.h"
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
+#include "BehaviorTree/Decorators/BTDecorator_ConditionalLoop.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Tasks/AttackPlayer.h"
@@ -70,7 +72,10 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		RootNode->Children.Add(IdleTaskCompChild);
 		RootNode->Children.Add(Sequence1Node);
 
+		//Create decorators
+		UBTDecorator_ConditionalLoop isAgressive;
 		//Add decorators to task
+		Sequence1Node.Decorators.Add(isAgressive);
 	}
 }
 

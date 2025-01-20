@@ -28,6 +28,15 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_maxNumberOfAgressiveEnemies_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_maxNumberOfAgressiveEnemies;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_currentNumberOfAgressiveEnemies_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_currentNumberOfAgressiveEnemies;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +53,24 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		{ "ModuleRelativePath", "Systems/EnemyManager.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyManager_Statics::NewProp_maxNumberOfAgressiveEnemies_MetaData[] = {
+		{ "Category", "EnemyManager" },
+		{ "ModuleRelativePath", "Systems/EnemyManager.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemyManager_Statics::NewProp_maxNumberOfAgressiveEnemies = { "maxNumberOfAgressiveEnemies", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyManager, maxNumberOfAgressiveEnemies), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::NewProp_maxNumberOfAgressiveEnemies_MetaData), Z_Construct_UClass_AEnemyManager_Statics::NewProp_maxNumberOfAgressiveEnemies_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyManager_Statics::NewProp_currentNumberOfAgressiveEnemies_MetaData[] = {
+		{ "Category", "EnemyManager" },
+		{ "ModuleRelativePath", "Systems/EnemyManager.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemyManager_Statics::NewProp_currentNumberOfAgressiveEnemies = { "currentNumberOfAgressiveEnemies", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyManager, currentNumberOfAgressiveEnemies), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::NewProp_currentNumberOfAgressiveEnemies_MetaData), Z_Construct_UClass_AEnemyManager_Statics::NewProp_currentNumberOfAgressiveEnemies_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemyManager_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_maxNumberOfAgressiveEnemies,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_currentNumberOfAgressiveEnemies,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemyManager_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEnemyManager>::IsAbstract,
 	};
@@ -53,15 +80,16 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AEnemyManager_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::Class_MetaDataParams), Z_Construct_UClass_AEnemyManager_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_AEnemyManager()
 	{
 		if (!Z_Registration_Info_UClass_AEnemyManager.OuterSingleton)
@@ -81,9 +109,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemyManager, AEnemyManager::StaticClass, TEXT("AEnemyManager"), &Z_Registration_Info_UClass_AEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyManager), 2197975605U) },
+		{ Z_Construct_UClass_AEnemyManager, AEnemyManager::StaticClass, TEXT("AEnemyManager"), &Z_Registration_Info_UClass_AEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyManager), 1767109808U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_206075941(TEXT("/Script/PortfolioPiece1"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_2636897624(TEXT("/Script/PortfolioPiece1"),
 		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_Systems_EnemyManager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -20,11 +20,18 @@ public:
 protected:
 	void FindAllEnemies();
 	void AddEnemy(AAIBaseClass* AI);
+	void SetAgressiveEnemies();
 
 public:
 	virtual void Tick(float DeltaSeconds) override;
 
+	UPROPERTY(EditDefaultsOnly)
+	float maxNumberOfAgressiveEnemies = 3;
+
 private:
 	TArray<AAIBaseClass*> enemies;
+	TArray<TPair<AAIBaseClass*, float>> distancePairs;
+	UPROPERTY(VisibleAnywhere)
+	float currentNumberOfAgressiveEnemies = 0;
 		
 };
