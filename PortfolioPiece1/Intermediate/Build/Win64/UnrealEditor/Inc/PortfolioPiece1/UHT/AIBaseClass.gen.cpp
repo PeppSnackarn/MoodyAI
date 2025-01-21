@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Classes/AIBaseClass.h"
+#include "PortfolioPiece1/AI Classes/Enemy/AIBaseClass.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAIBaseClass() {}
 // Cross Module References
@@ -45,14 +45,14 @@ void EmptyLinkFunctionForGeneratedCodeAIBaseClass() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIBaseClass_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
-		{ "IncludePath", "AI Classes/AIBaseClass.h" },
-		{ "ModuleRelativePath", "AI Classes/AIBaseClass.h" },
+		{ "IncludePath", "AI Classes/Enemy/AIBaseClass.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/AIBaseClass.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIBaseClass_Statics::NewProp_agressive_MetaData[] = {
 		{ "Category", "AIBaseClass" },
-		{ "ModuleRelativePath", "AI Classes/AIBaseClass.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/AIBaseClass.h" },
 	};
 #endif
 	void Z_Construct_UClass_AAIBaseClass_Statics::NewProp_agressive_SetBit(void* Obj)
@@ -96,15 +96,15 @@ void EmptyLinkFunctionForGeneratedCodeAIBaseClass() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AAIBaseClass);
 	AAIBaseClass::~AAIBaseClass() {}
-	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_AIBaseClass_h_Statics
+	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_AIBaseClass_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_AIBaseClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIBaseClass, AAIBaseClass::StaticClass, TEXT("AAIBaseClass"), &Z_Registration_Info_UClass_AAIBaseClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIBaseClass), 3320641572U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_AIBaseClass_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AAIBaseClass, AAIBaseClass::StaticClass, TEXT("AAIBaseClass"), &Z_Registration_Info_UClass_AAIBaseClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIBaseClass), 204239637U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_AIBaseClass_h_3411470098(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_AIBaseClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_AIBaseClass_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_AIBaseClass_h_2659799850(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_AIBaseClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_AIBaseClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

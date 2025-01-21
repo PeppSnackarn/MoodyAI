@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Classes/MeleeAIController.h"
+#include "PortfolioPiece1/AI Classes/Enemy/MeleeAIController.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMeleeAIController() {}
 // Cross Module References
@@ -53,14 +53,14 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAIController() {}
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Collision Rendering Transformation" },
-		{ "IncludePath", "AI Classes/MeleeAIController.h" },
-		{ "ModuleRelativePath", "AI Classes/MeleeAIController.h" },
+		{ "IncludePath", "AI Classes/Enemy/MeleeAIController.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/MeleeAIController.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BehaviorTree_MetaData[] = {
 		{ "Category", "MeleeAIController" },
-		{ "ModuleRelativePath", "AI Classes/MeleeAIController.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/MeleeAIController.h" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BehaviorTree = { "BehaviorTree", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMeleeAIController, BehaviorTree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BehaviorTree_MetaData), Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BehaviorTree_MetaData) };
@@ -68,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAIController() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BlackBoardComp_MetaData[] = {
 		{ "Category", "MeleeAIController" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "AI Classes/MeleeAIController.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/MeleeAIController.h" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BlackBoardComp = { "BlackBoardComp", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMeleeAIController, BlackBoardComp), Z_Construct_UClass_UBlackboardComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BlackBoardComp_MetaData), Z_Construct_UClass_AMeleeAIController_Statics::NewProp_BlackBoardComp_MetaData) };
@@ -110,15 +110,15 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAIController() {}
 	AMeleeAIController::AMeleeAIController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMeleeAIController);
 	AMeleeAIController::~AMeleeAIController() {}
-	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAIController_h_Statics
+	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAIController_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAIController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMeleeAIController, AMeleeAIController::StaticClass, TEXT("AMeleeAIController"), &Z_Registration_Info_UClass_AMeleeAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAIController), 2387599218U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAIController_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AMeleeAIController, AMeleeAIController::StaticClass, TEXT("AMeleeAIController"), &Z_Registration_Info_UClass_AMeleeAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAIController), 1900269475U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAIController_h_659315684(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAIController_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAIController_h_3766435108(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAIController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

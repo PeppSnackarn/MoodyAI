@@ -2,7 +2,7 @@
 
 
 #include "EnemyManager.h"
-#include "PortfolioPiece1/AI Classes/AIBaseClass.h"
+#include "PortfolioPiece1/AI Classes/Enemy/AIBaseClass.h"
 #include "Kismet/GameplayStatics.h"
 
 AEnemyManager::AEnemyManager()

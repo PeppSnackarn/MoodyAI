@@ -51,23 +51,41 @@
     <Filter Include="Source\PortfolioPiece1\AI Classes">
       <UniqueIdentifier>{F177B75F-C4B1-35F5-B32D-0CC5365AE143}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\AIBaseClass.cpp">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <Filter Include="Source\PortfolioPiece1\AI Classes\Director">
+      <UniqueIdentifier>{7B78B8D4-E96C-33F3-B3F0-151CAC13421D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\Director\DirectorAI.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes\Director</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\AIBaseClass.h">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\Director\DirectorAI.h">
+      <Filter>Source\PortfolioPiece1\AI Classes\Director</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAI.cpp">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\Director\DirectorAIController.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes\Director</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAI.h">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\Director\DirectorAIController.h">
+      <Filter>Source\PortfolioPiece1\AI Classes\Director</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.cpp">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <Filter Include="Source\PortfolioPiece1\AI Classes\Enemy">
+      <UniqueIdentifier>{7FB88E5D-4470-3D5D-97A7-CA66D9E754B3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\AIBaseClass.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\MeleeAIController.h">
-      <Filter>Source\PortfolioPiece1\AI Classes</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\AIBaseClass.h">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAI.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAI.h">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAIController.cpp">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAIController.h">
+      <Filter>Source\PortfolioPiece1\AI Classes\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\PortfolioPiece1\AI Decorators">
       <UniqueIdentifier>{72D42BFF-B3D4-3492-A8A0-2695E5DDF067}</UniqueIdentifier>

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Classes/MeleeAI.h"
+#include "PortfolioPiece1/AI Classes/Enemy/MeleeAI.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 // Cross Module References
@@ -42,8 +42,8 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Navigation" },
-		{ "IncludePath", "AI Classes/MeleeAI.h" },
-		{ "ModuleRelativePath", "AI Classes/MeleeAI.h" },
+		{ "IncludePath", "AI Classes/Enemy/MeleeAI.h" },
+		{ "ModuleRelativePath", "AI Classes/Enemy/MeleeAI.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMeleeAI_Statics::StaticCppClassTypeInfo = {
@@ -78,15 +78,15 @@ void EmptyLinkFunctionForGeneratedCodeMeleeAI() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMeleeAI);
 	AMeleeAI::~AMeleeAI() {}
-	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics
+	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAI_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 39830903U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAI_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AMeleeAI, AMeleeAI::StaticClass, TEXT("AMeleeAI"), &Z_Registration_Info_UClass_AMeleeAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMeleeAI), 2204864468U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_2840447217(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_MeleeAI_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAI_h_1958480363(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Classes_Enemy_MeleeAI_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

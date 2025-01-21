@@ -1,5 +1,41 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.PortfolioPiece1.cpp.obj": [
+			"DirectorAI.cpp.obj",
+			"DirectorAIController.cpp.obj",
+			"AIBaseClass.cpp.obj",
+			"MeleeAI.cpp.obj",
+			"MeleeAIController.cpp.obj",
+			"BTDecorator_IsAgressive.cpp.obj",
+			"AttackPlayer.cpp.obj",
+			"IdleTask.cpp.obj",
+			"MoveToPlayer.cpp.obj",
+			"RandomRoamTask.cpp.obj",
+			"GameInst.cpp.obj",
+			"PortfolioPiece1GameMode.cpp.obj",
+			"PortfolioPiece1.cpp.obj",
+			"PortfolioPiece1Character.cpp.obj",
+			"AITokenSystem.cpp.obj",
+			"HealthComponent.cpp.obj",
+			"AIBaseClass.gen.cpp.obj",
+			"AITokenSystem.gen.cpp.obj",
+			"AttackPlayer.gen.cpp.obj",
+			"BTDecorator_IsAgressive.gen.cpp.obj",
+			"DirectorAI.gen.cpp.obj",
+			"DirectorAIController.gen.cpp.obj",
+			"EnemyManager.gen.cpp.obj",
+			"GameInst.gen.cpp.obj",
+			"HealthComponent.gen.cpp.obj",
+			"IdleTask.gen.cpp.obj",
+			"MeleeAI.gen.cpp.obj",
+			"MeleeAIController.gen.cpp.obj",
+			"MoveToPlayer.gen.cpp.obj",
+			"PortfolioPiece1.init.gen.cpp.obj",
+			"PortfolioPiece1Character.gen.cpp.obj",
+			"PortfolioPiece1GameMode.gen.cpp.obj",
+			"RandomRoamTask.gen.cpp.obj",
+			"EnemyManager.cpp.obj"
+		]
 	}
 }
