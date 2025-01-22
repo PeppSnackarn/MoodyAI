@@ -17,6 +17,7 @@ EBTNodeResult::Type UIdleTask::ExecuteTask(UBehaviorTreeComponent& OwnerComp, ui
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
 	//Using EQS will try to find a position outside of view of player
+	UE_LOG(LogTemp, Log, TEXT("MISSING TASK INFO"))
 	
 	return EBTNodeResult::Failed;
 }

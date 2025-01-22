@@ -24,7 +24,7 @@ private: \
 	static void StaticRegisterNativesUBTDecorator_IsAgressive(); \
 	friend struct Z_Construct_UClass_UBTDecorator_IsAgressive_Statics; \
 public: \
-	DECLARE_CLASS(UBTDecorator_IsAgressive, UBTDecorator_BlackboardBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
+	DECLARE_CLASS(UBTDecorator_IsAgressive, UBTDecorator, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PortfolioPiece1"), NO_API) \
 	DECLARE_SERIALIZER(UBTDecorator_IsAgressive)
 
 

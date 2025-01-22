@@ -20,6 +20,7 @@ EBTNodeResult::Type URandomRoamTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 	FVector location = AIController->GetCharacter()->GetActorLocation();
 	UNavigationSystemV1* navSystem = UNavigationSystemV1::GetCurrent(GetWorld());
 	FNavLocation resultLocation;
+	UE_LOG(LogTemp, Log, TEXT("Moving towards new random point!"))
 
 	if(navSystem->GetRandomReachablePointInRadius(location, radius, resultLocation))
 	{
@@ -27,5 +28,5 @@ EBTNodeResult::Type URandomRoamTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 		return EBTNodeResult::Succeeded;
 	}
 	
-	return EBTNodeResult::Failed;
+	return EBTNodeResult::InProgress;
 }

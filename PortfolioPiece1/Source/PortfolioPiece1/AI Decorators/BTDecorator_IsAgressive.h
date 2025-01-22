@@ -10,13 +10,15 @@
  * 
  */
 UCLASS()
-class PORTFOLIOPIECE1_API UBTDecorator_IsAgressive : public UBTDecorator_BlackboardBase
+class PORTFOLIOPIECE1_API UBTDecorator_IsAgressive : public UBTDecorator
 {
 	GENERATED_BODY()
+public:
 	UBTDecorator_IsAgressive();
 
 protected:
 	virtual bool CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const override;
+	
 
 public:
 	UPROPERTY(EditDefaultsOnly)

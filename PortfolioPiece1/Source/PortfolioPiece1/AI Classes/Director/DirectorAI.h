@@ -48,7 +48,4 @@ protected:
 public:
 	UPROPERTY(VisibleAnywhere)
 	int AttackTokens = 2;
-	int MovementTokens = 4;
-	
-
 };

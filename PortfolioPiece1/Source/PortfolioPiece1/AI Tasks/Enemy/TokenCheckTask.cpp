@@ -18,9 +18,9 @@ EBTNodeResult::Type UTokenCheckTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 {
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
-	AAIBaseClass* AIClass = Cast<AAIBaseClass>(AIController);
+	AAIBaseClass* AIClass = Cast<AAIBaseClass>(AIController->GetPawn());
 
-	if(AIClass && AIClass->director)
+	if(AIClass)
 	{
 		if(AIClass->director->AttackTokens >= 1)
 		{
@@ -30,6 +30,7 @@ EBTNodeResult::Type UTokenCheckTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 		{
 			AIClass->hasTokensToAttack = false;
 		}
+		UE_LOG(LogTemp, Log, TEXT("Token status recieved"))
 		return EBTNodeResult::Succeeded;
 	}
 	return EBTNodeResult::Failed;

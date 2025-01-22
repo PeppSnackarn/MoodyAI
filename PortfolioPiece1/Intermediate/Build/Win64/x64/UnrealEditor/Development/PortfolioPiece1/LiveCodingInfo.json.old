@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.PortfolioPiece1.cpp.obj": [
-			"TokenCheckTask.gen.cpp.obj",
 			"DirectorAI.cpp.obj",
 			"DirectorAIController.cpp.obj",
 			"AIBaseClass.cpp.obj",
@@ -37,7 +36,8 @@
 			"PortfolioPiece1.init.gen.cpp.obj",
 			"PortfolioPiece1Character.gen.cpp.obj",
 			"PortfolioPiece1GameMode.gen.cpp.obj",
-			"RandomRoamTask.gen.cpp.obj"
+			"RandomRoamTask.gen.cpp.obj",
+			"TokenCheckTask.gen.cpp.obj"
 		]
 	}
 }

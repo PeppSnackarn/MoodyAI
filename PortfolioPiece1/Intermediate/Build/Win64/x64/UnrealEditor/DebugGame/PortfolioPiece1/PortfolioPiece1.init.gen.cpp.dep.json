@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\portfoliopiece1.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\debuggame\\unrealed\\sharedpch.unrealed.nonoptimized.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\portfoliopiece1\\definitions.portfoliopiece1.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

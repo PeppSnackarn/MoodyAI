@@ -1,17 +1,17 @@
 C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Director\DirectorAI.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAIController.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1Character.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\RandomRoamTask.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\AttackPlayer.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\AITokenSystem.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Director\DirectorAIController.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\HealthComponent.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\TokenCheckTask.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\EnemyManager.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\GameMode & Stuff\PortfolioPiece1GameMode.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\GameMode & Stuff\GameInst.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAI.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.h
-C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\MoveToPlayer.h
 C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Enemy\AIBaseClass.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\PortfolioPiece1Character.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Director\DirectorAIController.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAIController.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\RandomRoamTask.h
 C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\IdleTask.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\TokenCheckTask.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\GameMode & Stuff\GameInst.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\GameMode & Stuff\PortfolioPiece1GameMode.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Decorators\BTDecorator_IsAgressive.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Classes\Enemy\MeleeAI.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\AITokenSystem.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\MoveToPlayer.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\HealthComponent.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\Systems\EnemyManager.h
+C:\Users\nikodemius.ivarsson\Documents\GitHub\Portfolio1\PortfolioPiece1\Source\PortfolioPiece1\AI Tasks\Enemy\AttackPlayer.h
