@@ -13,10 +13,10 @@
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
-#include "PortfolioPiece1/AI Tasks/AttackPlayer.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
 #include "PortfolioPiece1/AI Decorators/BTDecorator_IsAgressive.h"
-#include "PortfolioPiece1/AI Tasks/IdleTask.h"
-#include "PortfolioPiece1/AI Tasks/MoveToPlayer.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/IdleTask.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/MoveToPlayer.h"
 
 UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 {

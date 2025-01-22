@@ -1,4 +1,8 @@
 #include "AIBaseClass.h"
+
+#include "ToolBuilderUtil.h"
+#include "Kismet/GameplayStatics.h"
+#include "PortfolioPiece1/AI Classes/Director/DirectorAI.h"
 #include "PortfolioPiece1/GameMode & Stuff/GameInst.h"
 
 
@@ -12,6 +16,7 @@ void AAIBaseClass::BeginPlay()
 {
 	Super::BeginPlay();
 	GameInstance = Cast<UGameInst>(GetGameInstance());
+	director = Cast<ADirectorAI>(UGameplayStatics::GetActorOfClass(GetWorld(), ADirectorAI::StaticClass()));
 }
 
 void AAIBaseClass::Move()

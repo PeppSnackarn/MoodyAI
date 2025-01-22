@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Tasks/IdleTask.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/IdleTask.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeIdleTask() {}
 // Cross Module References
@@ -41,8 +41,8 @@ void EmptyLinkFunctionForGeneratedCodeIdleTask() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "AI Tasks/IdleTask.h" },
-		{ "ModuleRelativePath", "AI Tasks/IdleTask.h" },
+		{ "IncludePath", "AI Tasks/Enemy/IdleTask.h" },
+		{ "ModuleRelativePath", "AI Tasks/Enemy/IdleTask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UIdleTask_Statics::StaticCppClassTypeInfo = {
@@ -77,15 +77,15 @@ void EmptyLinkFunctionForGeneratedCodeIdleTask() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UIdleTask);
 	UIdleTask::~UIdleTask() {}
-	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_IdleTask_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_IdleTask_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_IdleTask_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UIdleTask, UIdleTask::StaticClass, TEXT("UIdleTask"), &Z_Registration_Info_UClass_UIdleTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIdleTask), 3233011637U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_IdleTask_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UIdleTask, UIdleTask::StaticClass, TEXT("UIdleTask"), &Z_Registration_Info_UClass_UIdleTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIdleTask), 2870087622U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_IdleTask_h_1678833912(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_IdleTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_IdleTask_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_IdleTask_h_1864645698(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_IdleTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_IdleTask_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

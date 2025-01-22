@@ -5,16 +5,18 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/N4/KWE7FW79OFSQAROU6H5KTO.uasset",
-				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/ZB/2PIK95JZQKZIIGONO005ZJ.uasset",
-				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/AI/Manager/BP_Director.uasset",
 				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/StarterContent/Architecture/Floor_400x400.uasset",
 				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/AI/Behavior/BT_Melee.uasset",
 				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/AI/Manager/BP_EnemManager.uasset",
-				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/N4/KWE7FW79OFSQAROU6H5KTO.uasset",
 				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/KW/U5IVR00J51OIRJRWESP44O.uasset",
 				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/LM/UTNYOE2FYLUB90EJ9YX3NJ.uasset",
-				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/LV/DFWY0BE3UA40VPXPTD6ZP5.uasset"
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/LV/DFWY0BE3UA40VPXPTD6ZP5.uasset",
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/AI/Behavior/BT_MeleeImproved.uasset",
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/AI/Behavior/BT_Director.uasset",
+				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/N4/KWE7FW79OFSQAROU6H5KTO.uasset",
+				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/ZB/2PIK95JZQKZIIGONO005ZJ.uasset",
+				"E:/GitRepos/PortfolioPiece1/PortfolioPiece1/Content/AI/Manager/BP_Director.uasset",
+				"C:/Users/nikodemius.ivarsson/Documents/GitHub/Portfolio1/PortfolioPiece1/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/N4/KWE7FW79OFSQAROU6H5KTO.uasset"
 			]
 		}
 	]

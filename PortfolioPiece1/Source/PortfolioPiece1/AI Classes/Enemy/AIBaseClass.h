@@ -6,6 +6,7 @@
 #include "AIBaseClass.generated.h"
 
 
+class ADirectorAI;
 class UHealthComponent;
 class UHealthSystem;
 class AAIController;
@@ -33,5 +34,9 @@ public:
 public:
 	UPROPERTY(VisibleAnywhere)
 	bool agressive;
-
+	UPROPERTY(VisibleAnywhere)
+	bool hasSeenPlayer;
+	UPROPERTY(VisibleAnywhere)
+	bool hasTokensToAttack;
+	ADirectorAI* director = nullptr;
 };

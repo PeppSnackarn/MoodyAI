@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Tasks/AttackPlayer.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAttackPlayer() {}
 // Cross Module References
@@ -41,8 +41,8 @@ void EmptyLinkFunctionForGeneratedCodeAttackPlayer() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "AI Tasks/AttackPlayer.h" },
-		{ "ModuleRelativePath", "AI Tasks/AttackPlayer.h" },
+		{ "IncludePath", "AI Tasks/Enemy/AttackPlayer.h" },
+		{ "ModuleRelativePath", "AI Tasks/Enemy/AttackPlayer.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UAttackPlayer_Statics::StaticCppClassTypeInfo = {
@@ -77,15 +77,15 @@ void EmptyLinkFunctionForGeneratedCodeAttackPlayer() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UAttackPlayer);
 	UAttackPlayer::~UAttackPlayer() {}
-	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_AttackPlayer_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UAttackPlayer, UAttackPlayer::StaticClass, TEXT("UAttackPlayer"), &Z_Registration_Info_UClass_UAttackPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAttackPlayer), 2874061628U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_AttackPlayer_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UAttackPlayer, UAttackPlayer::StaticClass, TEXT("UAttackPlayer"), &Z_Registration_Info_UClass_UAttackPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAttackPlayer), 1473546340U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_1369208513(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_AttackPlayer_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_AttackPlayer_h_1617631519(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_AttackPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_AttackPlayer_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -56,14 +56,15 @@ void ADirectorAI::FindAllEnemies()
 	SetAgressiveEnemies();
 }
 
-void ADirectorAI::AddEnemy(AAIBaseClass* AI, FVector Location)
-{
-	enemies.Add(AI);
-}
-
 void ADirectorAI::SetAgressiveEnemies() // Right now is only adding nearby enemies to agressive list, REWORK LATER
 {
+	//Could use the hasSeenPlayer bool to determine what enemies should be alerted (should all enemies be alerted once spotted?)
 	//Clearing list
+	for (auto enemy : distancePairs)
+	{
+		enemy.Key->agressive = false;
+		distancePairs.Empty();
+	}
 	
 	//Adding members to pair list
 	for (AAIBaseClass* enemy : enemies)
@@ -85,8 +86,5 @@ void ADirectorAI::SetAgressiveEnemies() // Right now is only adding nearby enemi
 		distancePairs[i].Key->agressive = true;
 		currentNumberOfAgressiveEnemies++;
 	}
-
-	//Setting non agressive state for non viable enemies
-	
 }
 

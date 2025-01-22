@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "PortfolioPiece1/AI Tasks/RandomRoamTask.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/RandomRoamTask.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeRandomRoamTask() {}
 // Cross Module References
@@ -41,8 +41,8 @@ void EmptyLinkFunctionForGeneratedCodeRandomRoamTask() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "AI Tasks/RandomRoamTask.h" },
-		{ "ModuleRelativePath", "AI Tasks/RandomRoamTask.h" },
+		{ "IncludePath", "AI Tasks/Enemy/RandomRoamTask.h" },
+		{ "ModuleRelativePath", "AI Tasks/Enemy/RandomRoamTask.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_URandomRoamTask_Statics::StaticCppClassTypeInfo = {
@@ -77,15 +77,15 @@ void EmptyLinkFunctionForGeneratedCodeRandomRoamTask() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(URandomRoamTask);
 	URandomRoamTask::~URandomRoamTask() {}
-	struct Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_RandomRoamTask_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_RandomRoamTask_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_RandomRoamTask_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_URandomRoamTask, URandomRoamTask::StaticClass, TEXT("URandomRoamTask"), &Z_Registration_Info_UClass_URandomRoamTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URandomRoamTask), 3061841046U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_RandomRoamTask_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_URandomRoamTask, URandomRoamTask::StaticClass, TEXT("URandomRoamTask"), &Z_Registration_Info_UClass_URandomRoamTask, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URandomRoamTask), 3988420791U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_RandomRoamTask_h_2686856937(TEXT("/Script/PortfolioPiece1"),
-		Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_RandomRoamTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitRepos_PortfolioPiece1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_RandomRoamTask_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_RandomRoamTask_h_942459088(TEXT("/Script/PortfolioPiece1"),
+		Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_RandomRoamTask_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_nikodemius_ivarsson_Documents_GitHub_Portfolio1_PortfolioPiece1_Source_PortfolioPiece1_AI_Tasks_Enemy_RandomRoamTask_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

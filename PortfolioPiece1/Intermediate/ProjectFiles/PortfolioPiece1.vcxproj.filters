@@ -99,29 +99,38 @@
     <Filter Include="Source\PortfolioPiece1\AI Tasks">
       <UniqueIdentifier>{058B64C2-9A38-3D81-85FD-2AE14A871D55}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\AttackPlayer.cpp">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <Filter Include="Source\PortfolioPiece1\AI Tasks\Enemy">
+      <UniqueIdentifier>{A5629D8D-7578-3220-A48E-2F5537486652}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\AttackPlayer.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\AttackPlayer.h">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\AttackPlayer.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\IdleTask.cpp">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\IdleTask.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\IdleTask.h">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\IdleTask.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.cpp">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\MoveToPlayer.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\MoveToPlayer.h">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\MoveToPlayer.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\RandomRoamTask.cpp">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\RandomRoamTask.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\RandomRoamTask.h">
-      <Filter>Source\PortfolioPiece1\AI Tasks</Filter>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\RandomRoamTask.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\TokenCheckTask.cpp">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PortfolioPiece1\AI Tasks\Enemy\TokenCheckTask.h">
+      <Filter>Source\PortfolioPiece1\AI Tasks\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\PortfolioPiece1\GameMode &amp; Stuff">
       <UniqueIdentifier>{B1A3A538-5CD1-396D-BC9B-0CFA73911BFF}</UniqueIdentifier>

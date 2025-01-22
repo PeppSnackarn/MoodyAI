@@ -12,11 +12,13 @@
 			"IdleTask.cpp.obj",
 			"MoveToPlayer.cpp.obj",
 			"RandomRoamTask.cpp.obj",
+			"TokenCheckTask.cpp.obj",
 			"GameInst.cpp.obj",
 			"PortfolioPiece1GameMode.cpp.obj",
 			"PortfolioPiece1.cpp.obj",
 			"PortfolioPiece1Character.cpp.obj",
 			"AITokenSystem.cpp.obj",
+			"EnemyManager.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"AIBaseClass.gen.cpp.obj",
 			"AITokenSystem.gen.cpp.obj",
@@ -35,7 +37,7 @@
 			"PortfolioPiece1Character.gen.cpp.obj",
 			"PortfolioPiece1GameMode.gen.cpp.obj",
 			"RandomRoamTask.gen.cpp.obj",
-			"EnemyManager.cpp.obj"
+			"TokenCheckTask.gen.cpp.obj"
 		]
 	}
 }

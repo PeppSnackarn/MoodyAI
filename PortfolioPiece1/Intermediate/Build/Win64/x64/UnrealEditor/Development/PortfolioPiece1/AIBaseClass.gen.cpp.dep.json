@@ -1,21 +1,21 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aibaseclass.gen.cpp",
+        "Source": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aibaseclass.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "PCH": "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\portfoliopiece1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
         "Includes": [
-            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
-            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\source\\portfoliopiece1\\ai classes\\enemy\\aibaseclass.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
-            "e:\\thethetheepiciic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
-            "e:\\gitrepos\\portfoliopiece1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aibaseclass.generated.h"
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\portfoliopiece1\\definitions.portfoliopiece1.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\source\\portfoliopiece1\\ai classes\\enemy\\aibaseclass.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\nikodemius.ivarsson\\documents\\github\\portfolio1\\portfoliopiece1\\intermediate\\build\\win64\\unrealeditor\\inc\\portfoliopiece1\\uht\\aibaseclass.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

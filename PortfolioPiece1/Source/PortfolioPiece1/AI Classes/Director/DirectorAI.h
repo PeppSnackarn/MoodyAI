@@ -42,14 +42,13 @@ private:
 
 protected:
 	void FindAllEnemies();
-	void AddEnemy(AAIBaseClass* AI, FVector Location);
 	void SetAgressiveEnemies();
 
 	//Token system
 public:
 	UPROPERTY(VisibleAnywhere)
-	int AttackTokens = 5;
-	int MovementTokens = 5;
+	int AttackTokens = 2;
+	int MovementTokens = 4;
 	
 
 };
