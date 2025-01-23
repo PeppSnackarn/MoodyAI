@@ -53,21 +53,6 @@ UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 	
 	//Define root node
 	UBTCompositeNode* RootNode = NewObject<UBTComposite_Sequence>(BehaviorT);
-	/*
-	UBTCompositeNode* RootNode = NewObject<UBTComposite_SimpleParallel>(BehaviorT);
-	UBTComposite_SimpleParallel* root = Cast<UBTComposite_SimpleParallel>(RootNode);
-	if(root)
-	{
-		root->FinishMode = EBTParallelMode::WaitForBackground;
-		UE_LOG(LogTemp,Log, TEXT("ROOT ASSIGNED"))
-	}
-	else
-	{
-		UE_LOG(LogTemp,Log, TEXT("COULD NOT ASSIGN ROOT"))
-	}
-	*/
-	
-	
 	BehaviorT->RootNode = RootNode;
 	return BehaviorT;
 }
@@ -130,10 +115,9 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		isAgressiveDecorator->conditionToCheck = true;
 		
 		//Add decorators to nodes
-		IdleBehaviourSelectorCompChild.Decorators.Add(isNotAgressiveDecorator);
-		//BranchSelectorCompChild.Decorators.Add(isNotAgressiveDecorator);
-		//AttackSelectorCompChild.Decorators.Add(isAgressiveDecorator);
-
+		BranchSelectorCompChild.ChildComposite->Children[0].Decorators.Add(isNotAgressiveDecorator); // is the only way to make this work????
+		BranchSelectorCompChild.ChildComposite->Children[1].Decorators.Add(isAgressiveDecorator); 
+		
 		//Add Nodes to root
 		RootNode->Children.Add(TokenCheckTaskCompChild);
 		RootNode->Children.Add(BranchSelectorCompChild);

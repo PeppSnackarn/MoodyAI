@@ -17,6 +17,11 @@ EBTNodeResult::Type UIdleTask::ExecuteTask(UBehaviorTreeComponent& OwnerComp, ui
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
 	//Using EQS will try to find a position outside of view of player
+	//To be used when not set to be agressive but knows player location
+
+	//Might want to create a opposite task to this one that will maneouver to areas that are close to the player and visible
+	//To be used for moving without attack tokens
+	
 	UE_LOG(LogTemp, Log, TEXT("MISSING TASK INFO"))
 	
 	return EBTNodeResult::Failed;
