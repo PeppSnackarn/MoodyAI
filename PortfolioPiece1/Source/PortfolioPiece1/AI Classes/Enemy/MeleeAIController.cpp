@@ -16,6 +16,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
 #include "PortfolioPiece1/AI Decorators/BTDecorator_IsAgressive.h"
+#include "PortfolioPiece1/AI Decorators/BTDecorator_TakeToken.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/IdleTask.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/MoveToPlayer.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/RandomRoamTask.h"
@@ -47,6 +48,11 @@ UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 	TokenAvailable.EntryName = "Tokens Available";
 	TokenAvailable.KeyType = NewObject<UBlackboardKeyType_Bool>();
 	BlackboardComponent->Keys.Add(TokenAvailable);
+
+	FBlackboardEntry HoldingToken;
+	HoldingToken.EntryName = "Holding Token";
+	HoldingToken.KeyType = NewObject<UBlackboardKeyType_Bool>();
+	BlackboardComponent->Keys.Add(HoldingToken);
 	
 	//Set blackboard data
 	BehaviorT->BlackboardAsset = BlackboardComponent;
@@ -83,22 +89,35 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild TokenCheckTaskCompChild;
 		TokenCheckTaskCompChild.ChildTask = TokenCheckTask;
 
-		//Create nodes & connect them
+		//Create decorators
+		UBTDecorator_IsAgressive* isNotAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
+		isNotAgressiveDecorator->conditionToCheck = false;
+		
+		UBTDecorator_IsAgressive* isAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
+		isAgressiveDecorator->conditionToCheck = true;
+
+		UBTDecorator_TakeToken* takeTokenDecorator = NewObject<UBTDecorator_TakeToken>(BehaviorTree);
+		takeTokenDecorator->amount = 1;
+
+		//Create nodes, connect them & add decorators
 		UBTComposite_Sequence* AttackSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
 		AttackSequence->Children.Add(MoveToCompChild);
 		AttackSequence->Children.Add(AttackTaskCompChild);
 		FBTCompositeChild AttackSequenceCompChild;
+		AttackSequenceCompChild.Decorators.Add(takeTokenDecorator);
 		AttackSequenceCompChild.ChildComposite = AttackSequence;
 
 		UBTComposite_Selector* AttackSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
 		AttackSelector->Children.Add(AttackSequenceCompChild);
 		FBTCompositeChild AttackSelectorCompChild;
+		AttackSelectorCompChild.Decorators.Add(isAgressiveDecorator);
 		AttackSelectorCompChild.ChildComposite = AttackSelector;
 		
 		UBTComposite_Selector* IdleBehaviourSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
 		IdleBehaviourSelector->Children.Add(RandomRoamTaskCompChild);
 		IdleBehaviourSelector->Children.Add(IdleTaskCompChild);
 		FBTCompositeChild IdleBehaviourSelectorCompChild;
+		IdleBehaviourSelectorCompChild.Decorators.Add(isNotAgressiveDecorator);
 		IdleBehaviourSelectorCompChild.ChildComposite = IdleBehaviourSelector;
 
 		UBTComposite_Selector* BranchSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
@@ -106,17 +125,6 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		BranchSelector->Children.Add(AttackSelectorCompChild);
 		FBTCompositeChild BranchSelectorCompChild;
 		BranchSelectorCompChild.ChildComposite = BranchSelector;
-
-		//Create decorators
-		UBTDecorator_IsAgressive* isNotAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
-		isNotAgressiveDecorator->conditionToCheck = false;
-		
-		UBTDecorator_IsAgressive* isAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
-		isAgressiveDecorator->conditionToCheck = true;
-		
-		//Add decorators to nodes
-		BranchSelectorCompChild.ChildComposite->Children[0].Decorators.Add(isNotAgressiveDecorator); // is the only way to make this work????
-		BranchSelectorCompChild.ChildComposite->Children[1].Decorators.Add(isAgressiveDecorator); 
 		
 		//Add Nodes to root
 		RootNode->Children.Add(TokenCheckTaskCompChild);
@@ -143,9 +151,11 @@ void AMeleeAIController::BeginPlay()
 void AMeleeAIController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
 	BlackBoardComp->SetValueAsVector("Player Location", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
 	BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
 	BlackBoardComp->SetValueAsBool("Tokens Available", selfRef->hasTokensToAttack);
+	BlackBoardComp->SetValueAsBool("Holding Token", selfRef->isHoldingToken);
 }
 
 

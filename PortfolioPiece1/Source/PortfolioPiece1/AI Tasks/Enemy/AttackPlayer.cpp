@@ -3,8 +3,11 @@
 
 #include "AttackPlayer.h"
 
+#include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "PortfolioPiece1/PortfolioPiece1Character.h"
+#include "PortfolioPiece1/AI Classes/Director/DirectorAI.h"
+#include "PortfolioPiece1/AI Classes/Enemy/AIBaseClass.h"
 #include "PortfolioPiece1/Systems/HealthComponent.h"
 
 UAttackPlayer::UAttackPlayer()
@@ -16,16 +19,20 @@ EBTNodeResult::Type UAttackPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 {
 	AAIController* AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
-	float dmg = 10.f;
-	GEngine->AddOnScreenDebugMessage(0, 1, FColor::Blue, "Attack!", true);
+	AAIBaseClass* AIBase = Cast<AAIBaseClass>(AIController->GetPawn());
 
-	UObject* playerObj = Blackboard->GetValueAsObject("Player");
-	APortfolioPiece1Character* player = Cast<APortfolioPiece1Character>(playerObj);
-	if(player)
+	if(AIBase->isHoldingToken)
 	{
-		player->HealthComp->TakeDamage(dmg); // Is attacking every frame, give it a cooldown
-		return EBTNodeResult::Succeeded;
+		UE_LOG(LogTemp, Log, TEXT("ATTACK ACTION STARTED"));
+		UObject* playerObj = Blackboard->GetValueAsObject("Player");
+		APortfolioPiece1Character* player = Cast<APortfolioPiece1Character>(playerObj);
+		if(player)
+		{
+			player->HealthComp->TakeDamage(dmg); // Is attacking every frame, give it a cooldown
+			AIBase->director->ReleaseToken(1, 3);
+			AIBase->isHoldingToken = false;
+			return EBTNodeResult::Succeeded;
+		}
 	}
-
 	return EBTNodeResult::Failed;
 }

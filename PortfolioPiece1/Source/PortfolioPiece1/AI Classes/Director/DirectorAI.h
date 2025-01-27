@@ -48,4 +48,8 @@ protected:
 public:
 	UPROPERTY(VisibleAnywhere)
 	int AttackTokens = 2;
+	bool RequestToken(int amount);
+	void ReleaseToken(int amount, float delay);
+private:
+	void AddToken(int amount);
 };

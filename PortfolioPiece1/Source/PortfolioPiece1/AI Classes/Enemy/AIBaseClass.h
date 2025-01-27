@@ -38,5 +38,7 @@ public:
 	bool hasSeenPlayer;
 	UPROPERTY(VisibleAnywhere)
 	bool hasTokensToAttack;
+	UPROPERTY(VisibleAnywhere)
+	bool isHoldingToken;
 	ADirectorAI* director = nullptr;
 };

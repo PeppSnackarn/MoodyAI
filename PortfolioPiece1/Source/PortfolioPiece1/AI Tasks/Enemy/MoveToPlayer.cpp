@@ -25,12 +25,6 @@ EBTNodeResult::Type UMoveToPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		FVector AILocation = OwnerComp.GetAIOwner()->GetCharacter()->GetActorLocation();
 		AIController->MoveToLocation(PlayerLocation, acceptanceRadius, true, true, true, false, 0, true);
 		GEngine->AddOnScreenDebugMessage(0, 5, FColor::Red, "Moving", false);
-
-		/*
-		float Distance = FVector::Distance(AILocation, PlayerLocation);
-		UE_LOG(LogTemp, Log, TEXT("The distance is: %.2f units."),
-		Distance);
-		*/
 		
 		if(FVector::Distance(AILocation, PlayerLocation) <= acceptanceRadius+40.f) // Acceptance radius and actual distance to target is not aligning correctly (shifting about + 35-38 units)
 		{

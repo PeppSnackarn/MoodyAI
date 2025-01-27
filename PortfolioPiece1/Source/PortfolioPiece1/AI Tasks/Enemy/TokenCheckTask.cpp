@@ -30,7 +30,6 @@ EBTNodeResult::Type UTokenCheckTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 		{
 			AIClass->hasTokensToAttack = false;
 		}
-		UE_LOG(LogTemp, Log, TEXT("Token status recieved"))
 		return EBTNodeResult::Succeeded;
 	}
 	return EBTNodeResult::Failed;

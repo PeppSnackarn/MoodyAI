@@ -81,10 +81,44 @@ void ADirectorAI::SetAgressiveEnemies() // Right now is only adding nearby enemi
 	});
 
 	//Setting agressive state for viable enemies
-	for (int i = 0; i < maxNumberOfAgressiveEnemies; ++i)
+	if(enemies.Num() >= maxNumberOfAgressiveEnemies)
 	{
-		distancePairs[i].Key->agressive = true;
-		currentNumberOfAgressiveEnemies++;
+		for (int i = 0; i < maxNumberOfAgressiveEnemies; ++i)
+		{
+			distancePairs[i].Key->agressive = true;
+			currentNumberOfAgressiveEnemies++;
+		}
 	}
+	else // if less enemies than max amount of agressive allowed
+	{
+		for (int i = 0; i < enemies.Num(); ++i)
+		{
+			distancePairs[i].Key->agressive = true;
+			currentNumberOfAgressiveEnemies++;
+		}
+	}
+}
+
+bool ADirectorAI::RequestToken(int amount)
+{
+	if (AttackTokens - amount >= 0)
+	{
+		//Do attack
+		AttackTokens -= amount;
+		return true;
+	}
+	return false;
+}
+
+void ADirectorAI::ReleaseToken(int amount, float delay)
+{
+	FTimerHandle TimerHandle;
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, [this, amount]() {AddToken(amount);}, delay, false);
+	//Using a lambda to passthrough the "amount" variable
+}
+
+void ADirectorAI::AddToken(int amount)
+{
+	AttackTokens += amount;
 }
 
