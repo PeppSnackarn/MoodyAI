@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTTaskNode.h"
 #include "RandomRoamTask.generated.h"
-
 /**
  * 
  */
@@ -18,5 +17,7 @@ class PORTFOLIOPIECE1_API URandomRoamTask : public UBTTaskNode
 protected:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	float radius = 1500.f;
-	
+	AAIController* AIController;
+
+	void TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 };

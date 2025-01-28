@@ -12,6 +12,7 @@
 #include "BehaviorTree/Composites/BTComposite_Selector.h"
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
 #include "BehaviorTree/Composites/BTComposite_SimpleParallel.h"
+#include "BehaviorTree/Tasks/BTTask_Wait.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
@@ -85,6 +86,11 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild RandomRoamTaskCompChild;
 		RandomRoamTaskCompChild.ChildTask = RoamTask;
 
+		UBTTask_Wait* WaitTask = NewObject<UBTTask_Wait>(BehaviorTree);
+		WaitTask->WaitTime = 2.f;
+		FBTCompositeChild WaitTaskCompChild;
+		WaitTaskCompChild.ChildTask = WaitTask;
+
 		UTokenCheckTask* TokenCheckTask = NewObject<UTokenCheckTask>(BehaviorTree);
 		FBTCompositeChild TokenCheckTaskCompChild;
 		TokenCheckTaskCompChild.ChildTask = TokenCheckTask;
@@ -107,14 +113,25 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		AttackSequenceCompChild.Decorators.Add(takeTokenDecorator);
 		AttackSequenceCompChild.ChildComposite = AttackSequence;
 
+		UBTComposite_Sequence* NoTokenAtkSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
+		FBTCompositeChild NoTokenAtkSequenceCompChild;
+		NoTokenAtkSequenceCompChild.ChildComposite = NoTokenAtkSequence;
+
+		UBTComposite_Sequence* RandomRoamSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
+		RandomRoamSequence->Children.Add(RandomRoamTaskCompChild);
+		RandomRoamSequence->Children.Add(WaitTaskCompChild);
+		FBTCompositeChild RandomRoamSequenceCompChild;
+		RandomRoamSequenceCompChild.ChildComposite = RandomRoamSequence;
+
 		UBTComposite_Selector* AttackSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
 		AttackSelector->Children.Add(AttackSequenceCompChild);
+		AttackSelector->Children.Add(NoTokenAtkSequenceCompChild);
 		FBTCompositeChild AttackSelectorCompChild;
 		AttackSelectorCompChild.Decorators.Add(isAgressiveDecorator);
 		AttackSelectorCompChild.ChildComposite = AttackSelector;
 		
 		UBTComposite_Selector* IdleBehaviourSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
-		IdleBehaviourSelector->Children.Add(RandomRoamTaskCompChild);
+		IdleBehaviourSelector->Children.Add(RandomRoamSequenceCompChild);
 		IdleBehaviourSelector->Children.Add(IdleTaskCompChild);
 		FBTCompositeChild IdleBehaviourSelectorCompChild;
 		IdleBehaviourSelectorCompChild.Decorators.Add(isNotAgressiveDecorator);

@@ -7,15 +7,17 @@
 #include "NavigationSystem.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "GameFramework/Character.h"
+#include "Navigation/PathFollowingComponent.h"
 
 URandomRoamTask::URandomRoamTask()
 {
 	NodeName = "Random roam";
+	bNotifyTick = true;
 }
 
 EBTNodeResult::Type URandomRoamTask::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	AAIController* AIController = OwnerComp.GetAIOwner();
+	AIController = OwnerComp.GetAIOwner();
 	UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
 	FVector location = AIController->GetCharacter()->GetActorLocation();
 	UNavigationSystemV1* navSystem = UNavigationSystemV1::GetCurrent(GetWorld());
@@ -25,8 +27,21 @@ EBTNodeResult::Type URandomRoamTask::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 	if(navSystem->GetRandomReachablePointInRadius(location, radius, resultLocation))
 	{
 		AIController->MoveToLocation(resultLocation);
+		
+		return EBTNodeResult::InProgress;
+	}
+	if(AIController->GetMoveStatus() == EPathFollowingStatus::Idle)
+	{
 		return EBTNodeResult::Succeeded;
 	}
-	
-	return EBTNodeResult::InProgress;
+	return  EBTNodeResult::Failed;
+}
+
+void URandomRoamTask::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
+{
+	UBTTaskNode::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
+	if(AIController->GetMoveStatus() == EPathFollowingStatus::Idle)
+	{
+		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+	}
 }
