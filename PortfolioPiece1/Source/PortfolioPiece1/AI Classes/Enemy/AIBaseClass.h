@@ -2,6 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EnvironmentQuery/EnvQuery.h"
 #include "GameFramework/Character.h"
 #include "AIBaseClass.generated.h"
 
@@ -41,4 +42,6 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	bool isHoldingToken;
 	ADirectorAI* director = nullptr;
+	UPROPERTY(EditDefaultsOnly)
+	UEnvQuery* OpenSpaceEQS;
 };

@@ -11,7 +11,6 @@
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Vector.h"
 #include "BehaviorTree/Composites/BTComposite_Selector.h"
 #include "BehaviorTree/Composites/BTComposite_Sequence.h"
-#include "BehaviorTree/Composites/BTComposite_SimpleParallel.h"
 #include "BehaviorTree/Tasks/BTTask_Wait.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
@@ -21,6 +20,7 @@
 #include "PortfolioPiece1/AI Tasks/Enemy/IdleTask.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/MoveToPlayer.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/RandomRoamTask.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/RunEQSOpenSpace.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/TokenCheckTask.h"
 
 UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
@@ -54,6 +54,11 @@ UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 	HoldingToken.EntryName = "Holding Token";
 	HoldingToken.KeyType = NewObject<UBlackboardKeyType_Bool>();
 	BlackboardComponent->Keys.Add(HoldingToken);
+
+	FBlackboardEntry EQSOpenLocation;
+	EQSOpenLocation.EntryName = "EQS Open Location";
+	EQSOpenLocation.KeyType = NewObject<UBlackboardKeyType_Vector>();
+	BlackboardComponent->Keys.Add(EQSOpenLocation);
 	
 	//Set blackboard data
 	BehaviorT->BlackboardAsset = BlackboardComponent;
@@ -95,6 +100,17 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild TokenCheckTaskCompChild;
 		TokenCheckTaskCompChild.ChildTask = TokenCheckTask;
 
+		URunEQSOpenSpace* EQSOpenSpaceTask = NewObject<URunEQSOpenSpace>(BehaviorTree);
+        /*
+		FBlackboardKeySelector KeySelector;
+		KeySelector.SelectedKeyName = "EQS Open Location";
+		KeySelector.SelectedKeyType = UBlackboardKeyType_Vector::StaticClass();
+		KeySelector.AddVectorFilter(this, "EQS Open Location");
+		EQSOpenSpaceTask->KeySelector = KeySelector;
+		*/
+		FBTCompositeChild EQSOpenSpaceCompChild;
+		EQSOpenSpaceCompChild.ChildTask = EQSOpenSpaceTask;
+
 		//Create decorators
 		UBTDecorator_IsAgressive* isNotAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
 		isNotAgressiveDecorator->conditionToCheck = false;
@@ -114,6 +130,7 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		AttackSequenceCompChild.ChildComposite = AttackSequence;
 
 		UBTComposite_Sequence* NoTokenAtkSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
+		NoTokenAtkSequence->Children.Add(EQSOpenSpaceCompChild);
 		FBTCompositeChild NoTokenAtkSequenceCompChild;
 		NoTokenAtkSequenceCompChild.ChildComposite = NoTokenAtkSequence;
 
@@ -161,6 +178,7 @@ void AMeleeAIController::BeginPlay()
 		UseBlackboard(BehaviorTree->GetBlackboardAsset(), BlackBoardComp); // Uses the blackboarddata attached to the BT and creates a BBComp
 		BlackBoardComp->SetValueAsObject("Player", UGameplayStatics::GetPlayerCharacter(GetWorld(),0));
 		BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
+		BlackBoardComp->SetValueAsVector("EQS Open Location", FVector(0,0,0));
 		RunBehaviorTree(BehaviorTree);
 	}
 }
