@@ -117,6 +117,11 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		UBTDecorator_TakeToken* takeTokenDecorator = NewObject<UBTDecorator_TakeToken>(BehaviorTree);
 		takeTokenDecorator->amount = 1;
 
+		UBT_CheckBool* doesNotHaveToken = NewObject<UBT_CheckBool>(BehaviorTree);
+		doesNotHaveToken->BoolToCheck = FString("Holding Token");
+		doesNotHaveToken->conditionToCheck = false;
+		
+
 		//Create nodes, connect them & add decorators
 		UBTComposite_Sequence* AttackSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
 		AttackSequence->Children.Add(MoveToCompChild);
@@ -129,6 +134,7 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		NoTokenAtkSequence->Children.Add(EQSOpenSpaceCompChild);
 		NoTokenAtkSequence->Children.Add(GoToEQSOpenCompChild);
 		FBTCompositeChild NoTokenAtkSequenceCompChild;
+		NoTokenAtkSequenceCompChild.Decorators.Add(doesNotHaveToken);
 		NoTokenAtkSequenceCompChild.ChildComposite = NoTokenAtkSequence;
 
 		UBTComposite_Sequence* RandomRoamSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);

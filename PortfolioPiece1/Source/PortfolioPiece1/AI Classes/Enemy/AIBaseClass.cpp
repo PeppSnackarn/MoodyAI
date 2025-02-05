@@ -19,17 +19,27 @@ void AAIBaseClass::BeginPlay()
 	director = Cast<ADirectorAI>(UGameplayStatics::GetActorOfClass(GetWorld(), ADirectorAI::StaticClass()));
 }
 
-void AAIBaseClass::Move()
-{
-}
-
-void AAIBaseClass::Attack()
-{
-}
-
 void AAIBaseClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if(agressive && isHoldingToken)
+	{
+		//Red
+		GetMesh()->SetMaterial(0, RedMat1);
+		GetMesh()->SetMaterial(1, RedMat2);
+	}
+	else if(agressive && !isHoldingToken)
+	{
+		//Yellow
+		GetMesh()->SetMaterial(0, YellowMat1);
+		GetMesh()->SetMaterial(1, YellowMat2);
+	}
+	else
+	{
+		//Green
+		GetMesh()->SetMaterial(0, GreenMat1);
+		GetMesh()->SetMaterial(1, GreenMat2);
+	}
 
 }
 

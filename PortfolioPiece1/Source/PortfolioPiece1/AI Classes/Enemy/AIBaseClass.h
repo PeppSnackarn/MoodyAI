@@ -23,8 +23,6 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	virtual void Move();
-	virtual void Attack();
 	
 public:	
 	virtual void Tick(float DeltaTime) override;
@@ -44,4 +42,19 @@ public:
 	ADirectorAI* director = nullptr;
 	UPROPERTY(EditDefaultsOnly)
 	UEnvQuery* OpenSpaceEQS;
+
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* RedMat1;
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* RedMat2;
+
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* YellowMat1;
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* YellowMat2;
+
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* GreenMat1;
+	UPROPERTY(EditDefaultsOnly)
+	UMaterialInstance* GreenMat2;
 };
