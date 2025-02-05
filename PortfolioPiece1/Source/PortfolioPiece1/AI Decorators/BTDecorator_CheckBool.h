@@ -4,23 +4,25 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/Decorators/BTDecorator_BlackboardBase.h"
-#include "BTDecorator_IsAgressive.generated.h"
+#include "BTDecorator_CheckBool.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PORTFOLIOPIECE1_API UBTDecorator_IsAgressive : public UBTDecorator
+class PORTFOLIOPIECE1_API UBT_CheckBool : public UBTDecorator
 {
 	GENERATED_BODY()
 public:
-	UBTDecorator_IsAgressive();
+	UBT_CheckBool();
 
 protected:
 	virtual bool CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) const override;
 	
 
 public:
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY()
+	FString BoolToCheck;
+	
 	bool conditionToCheck;
 };

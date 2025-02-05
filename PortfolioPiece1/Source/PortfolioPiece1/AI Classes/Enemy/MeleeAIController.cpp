@@ -15,9 +15,9 @@
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
-#include "PortfolioPiece1/AI Decorators/BTDecorator_IsAgressive.h"
+#include "PortfolioPiece1/AI Decorators/BTDecorator_CheckBool.h"
 #include "PortfolioPiece1/AI Decorators/BTDecorator_TakeToken.h"
-#include "PortfolioPiece1/AI Tasks/Enemy/IdleTask.h"
+#include "PortfolioPiece1/AI Tasks/Enemy/GoToBlackboardVector.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/MoveToPlayer.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/RandomRoamTask.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/RunEQSOpenSpace.h"
@@ -83,10 +83,6 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		FBTCompositeChild AttackTaskCompChild;
 		AttackTaskCompChild.ChildTask = AttackTask;
 
-		UIdleTask* IdleTask = NewObject<UIdleTask>(BehaviorTree);
-		FBTCompositeChild IdleTaskCompChild;
-		IdleTaskCompChild.ChildTask = IdleTask;
-
 		URandomRoamTask* RoamTask = NewObject<URandomRoamTask>(BehaviorTree);
 		FBTCompositeChild RandomRoamTaskCompChild;
 		RandomRoamTaskCompChild.ChildTask = RoamTask;
@@ -101,21 +97,21 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		TokenCheckTaskCompChild.ChildTask = TokenCheckTask;
 
 		URunEQSOpenSpace* EQSOpenSpaceTask = NewObject<URunEQSOpenSpace>(BehaviorTree);
-        /*
-		FBlackboardKeySelector KeySelector;
-		KeySelector.SelectedKeyName = "EQS Open Location";
-		KeySelector.SelectedKeyType = UBlackboardKeyType_Vector::StaticClass();
-		KeySelector.AddVectorFilter(this, "EQS Open Location");
-		EQSOpenSpaceTask->KeySelector = KeySelector;
-		*/
 		FBTCompositeChild EQSOpenSpaceCompChild;
 		EQSOpenSpaceCompChild.ChildTask = EQSOpenSpaceTask;
 
+		UGoToBlackboardVector* GoToEQSOpenTask = NewObject<UGoToBlackboardVector>(BehaviorTree);
+		GoToEQSOpenTask->BBVectorName = "EQS Open Location";
+		FBTCompositeChild GoToEQSOpenCompChild;
+		GoToEQSOpenCompChild.ChildTask = GoToEQSOpenTask;
+
 		//Create decorators
-		UBTDecorator_IsAgressive* isNotAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
+		UBT_CheckBool* isNotAgressiveDecorator = NewObject<UBT_CheckBool>(BehaviorTree);
+		isNotAgressiveDecorator->BoolToCheck = FString("Is Agressive");
 		isNotAgressiveDecorator->conditionToCheck = false;
 		
-		UBTDecorator_IsAgressive* isAgressiveDecorator = NewObject<UBTDecorator_IsAgressive>(BehaviorTree);
+		UBT_CheckBool* isAgressiveDecorator = NewObject<UBT_CheckBool>(BehaviorTree);
+		isNotAgressiveDecorator->BoolToCheck = FString("Is Agressive");
 		isAgressiveDecorator->conditionToCheck = true;
 
 		UBTDecorator_TakeToken* takeTokenDecorator = NewObject<UBTDecorator_TakeToken>(BehaviorTree);
@@ -131,6 +127,7 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 
 		UBTComposite_Sequence* NoTokenAtkSequence = NewObject<UBTComposite_Sequence>(BehaviorTree);
 		NoTokenAtkSequence->Children.Add(EQSOpenSpaceCompChild);
+		NoTokenAtkSequence->Children.Add(GoToEQSOpenCompChild);
 		FBTCompositeChild NoTokenAtkSequenceCompChild;
 		NoTokenAtkSequenceCompChild.ChildComposite = NoTokenAtkSequence;
 
@@ -149,7 +146,6 @@ void AMeleeAIController::AssembleBehaviorTree(UBehaviorTree* Tree)
 		
 		UBTComposite_Selector* IdleBehaviourSelector = NewObject<UBTComposite_Selector>(BehaviorTree);
 		IdleBehaviourSelector->Children.Add(RandomRoamSequenceCompChild);
-		IdleBehaviourSelector->Children.Add(IdleTaskCompChild);
 		FBTCompositeChild IdleBehaviourSelectorCompChild;
 		IdleBehaviourSelectorCompChild.Decorators.Add(isNotAgressiveDecorator);
 		IdleBehaviourSelectorCompChild.ChildComposite = IdleBehaviourSelector;

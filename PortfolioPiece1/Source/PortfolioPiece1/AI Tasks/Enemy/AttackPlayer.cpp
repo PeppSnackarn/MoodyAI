@@ -28,7 +28,7 @@ EBTNodeResult::Type UAttackPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		APortfolioPiece1Character* player = Cast<APortfolioPiece1Character>(playerObj);
 		if(player)
 		{
-			player->HealthComp->TakeDamage(dmg); // Is attacking every frame, give it a cooldown
+			player->HealthComp->TakeDamage(dmg);
 			AIBase->director->ReleaseToken(1, 3);
 			AIBase->isHoldingToken = false;
 			return EBTNodeResult::Succeeded;
