@@ -11,32 +11,31 @@ URunEQSOpenSpace::URunEQSOpenSpace()
 {
 	NodeName = "Run EQS open space";
 	RunMode = EEnvQueryRunMode::RandomBest5Pct;
+	EQSRequest.RunMode = EEnvQueryRunMode::RandomBest5Pct;
 	//BlackboardKey = KeySelector;
 	BlackboardKey.AddVectorFilter(this, "EQS Open Location");
+	QueryFinishedDelegate.BindUObject(this, &URunEQSOpenSpace::OnQueryFinished);
 }
 
 EBTNodeResult::Type URunEQSOpenSpace::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	Blackboard = OwnerComp.GetBlackboardComponent();
 	AIClass = Cast<AAIBaseClass>(OwnerComp.GetAIOwner()->GetPawn());
 	if(AIClass)
 	{
+		EQSRequest.QueryTemplate = AIClass->OpenSpaceEQS;
 		QueryTemplate = AIClass->OpenSpaceEQS;
 	}
-	if(QueryTemplate == nullptr) // Is not nullptr
-	{
-		UE_LOG(LogTemp, Log, TEXT("QUERY IS NULL"))
-	}
-	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory); // QueryTemplate gets set to nullptr
+	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 
-	if(Result == EBTNodeResult::Succeeded)
+	if(Result == EBTNodeResult::InProgress)
 	{
-		UBlackboardComponent* Blackboard = OwnerComp.GetBlackboardComponent();
-		if(Blackboard)
-		{
-			FVector EQSRes = Blackboard->GetValueAsVector(BlackboardKey.SelectedKeyName);
-
-			Blackboard->SetValueAsVector("EQS Open Location", EQSRes);
-		}
+		return EBTNodeResult::Succeeded;
 	}
-	return Result;
-} 
+	return EBTNodeResult::Failed;
+}
+
+void URunEQSOpenSpace::OnQueryFinished(TSharedPtr<FEnvQueryResult> Result)
+{
+	Blackboard->SetValueAsVector("EQS Open Location", Result->GetItemAsLocation(0));
+}
