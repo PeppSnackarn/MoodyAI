@@ -194,7 +194,3 @@ void AMeleeAIController::Tick(float DeltaSeconds)
 	BlackBoardComp->SetValueAsBool("Tokens Available", selfRef->hasTokensToAttack);
 	BlackBoardComp->SetValueAsBool("Holding Token", selfRef->isHoldingToken);
 }
-
-
-
-
