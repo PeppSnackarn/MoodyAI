@@ -10,7 +10,6 @@
 URunEQSOpenSpace::URunEQSOpenSpace()
 {
 	NodeName = "Run EQS open space";
-	RunMode = EEnvQueryRunMode::SingleResult;
 	EQSRequest.RunMode = EEnvQueryRunMode::SingleResult;
 	BlackboardKey.AddVectorFilter(this, "EQS Open Location");
 	QueryFinishedDelegate.BindUObject(this, &URunEQSOpenSpace::OnQueryFinished);
@@ -23,7 +22,6 @@ EBTNodeResult::Type URunEQSOpenSpace::ExecuteTask(UBehaviorTreeComponent& OwnerC
 	if(AIClass)
 	{
 		EQSRequest.QueryTemplate = AIClass->OpenSpaceEQS;
-		QueryTemplate = AIClass->OpenSpaceEQS;
 	}
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 

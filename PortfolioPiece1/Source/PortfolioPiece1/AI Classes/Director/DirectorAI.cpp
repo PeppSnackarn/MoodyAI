@@ -1,6 +1,5 @@
 #include "DirectorAI.h"
 
-#include "DirectorAIController.h"
 #include "PortfolioPiece1/GameMode & Stuff/GameInst.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Classes/Enemy/AIBaseClass.h"
@@ -9,8 +8,6 @@
 ADirectorAI::ADirectorAI()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	//AIControllerClass = ADirectorAIController::StaticClass();
-	//AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void ADirectorAI::BeginPlay()
