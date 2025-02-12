@@ -27,14 +27,21 @@ EBTNodeResult::Type UGoToBlackboardVector::ExecuteTask(UBehaviorTreeComponent& O
 	{
 		return EBTNodeResult::Succeeded;
 	}
+	if (!waitForReachPos)
+	{
+		return EBTNodeResult::Succeeded;
+	}
 	return  EBTNodeResult::InProgress;
 }
 
 void UGoToBlackboardVector::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
 	Super::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
-	if(AIController->GetMoveStatus() == EPathFollowingStatus::Idle)
+	if (waitForReachPos)
 	{
-		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		if(AIController->GetMoveStatus() == EPathFollowingStatus::Idle)
+		{
+			FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+		}
 	}
 }

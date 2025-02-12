@@ -1,6 +1,7 @@
 #include "AIBaseClass.h"
 
 #include "ToolBuilderUtil.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "PortfolioPiece1/AI Classes/Director/DirectorAI.h"
 #include "PortfolioPiece1/GameMode & Stuff/GameInst.h"

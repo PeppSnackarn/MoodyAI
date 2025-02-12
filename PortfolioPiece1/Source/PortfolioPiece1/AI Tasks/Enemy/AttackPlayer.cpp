@@ -29,7 +29,7 @@ EBTNodeResult::Type UAttackPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 		if(player)
 		{
 			player->HealthComp->TakeDamage(dmg);
-			AIBase->director->ReleaseToken(1, 3);
+			AIBase->director->ReleaseToken(1, 2);
 			AIBase->isHoldingToken = false;
 			return EBTNodeResult::Succeeded;
 		}

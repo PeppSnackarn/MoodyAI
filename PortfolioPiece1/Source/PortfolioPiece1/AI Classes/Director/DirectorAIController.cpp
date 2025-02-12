@@ -72,8 +72,6 @@ void ADirectorAIController::BeginPlay()
 void ADirectorAIController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	BlackBoardComp->SetValueAsVector("Player Location", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
-	BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
 }
 
 

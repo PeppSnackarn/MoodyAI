@@ -9,8 +9,8 @@
 ADirectorAI::ADirectorAI()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	AIControllerClass = ADirectorAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+	//AIControllerClass = ADirectorAIController::StaticClass();
+	//AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void ADirectorAI::BeginPlay()
@@ -56,15 +56,15 @@ void ADirectorAI::FindAllEnemies()
 	SetAgressiveEnemies();
 }
 
-void ADirectorAI::SetAgressiveEnemies() // Right now is only adding nearby enemies to agressive list, REWORK LATER
+void ADirectorAI::SetAgressiveEnemies()
 {
-	//Could use the hasSeenPlayer bool to determine what enemies should be alerted (should all enemies be alerted once spotted?)
 	//Clearing list
 	for (auto enemy : distancePairs)
 	{
 		enemy.Key->agressive = false;
-		distancePairs.Empty();
 	}
+	currentNumberOfAgressiveEnemies = 0;
+	distancePairs.Empty();
 	
 	//Adding members to pair list
 	for (AAIBaseClass* enemy : enemies)
@@ -89,7 +89,7 @@ void ADirectorAI::SetAgressiveEnemies() // Right now is only adding nearby enemi
 			currentNumberOfAgressiveEnemies++;
 		}
 	}
-	else // if less enemies than max amount of agressive allowed
+	else // if less enemies than max amount of aggressive allowed
 	{
 		for (int i = 0; i < enemies.Num(); ++i)
 		{
@@ -114,7 +114,7 @@ void ADirectorAI::ReleaseToken(int amount, float delay)
 {
 	FTimerHandle TimerHandle;
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle, [this, amount]() {AddToken(amount);}, delay, false);
-	//Using a lambda to passthrough the "amount" variable
+	//Using a lambda to pass through the "amount" variable
 }
 
 void ADirectorAI::AddToken(int amount)

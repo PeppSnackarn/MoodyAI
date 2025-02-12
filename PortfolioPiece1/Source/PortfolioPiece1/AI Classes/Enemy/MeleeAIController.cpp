@@ -23,6 +23,7 @@
 #include "PortfolioPiece1/AI Tasks/Enemy/RunEQSOpenSpace.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/TokenCheckTask.h"
 
+
 UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 {
 	UBehaviorTree* BehaviorT = NewObject<UBehaviorTree>();

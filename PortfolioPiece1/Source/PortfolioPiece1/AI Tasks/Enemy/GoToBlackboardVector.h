@@ -23,4 +23,6 @@ protected:
 public:
 	UPROPERTY()
 	FString BBVectorName;
+
+	bool waitForReachPos = false;
 };
