@@ -42,7 +42,7 @@ protected:
 
 	//Token system
 public:
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditDefaultsOnly)
 	int AttackTokens = 2;
 	bool RequestToken(int amount);
 	void ReleaseToken(int amount, float delay);

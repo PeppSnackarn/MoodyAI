@@ -10,7 +10,7 @@
 URunEQSOpenSpace::URunEQSOpenSpace()
 {
 	NodeName = "Run EQS open space";
-	EQSRequest.RunMode = EEnvQueryRunMode::SingleResult;
+	EQSRequest.RunMode = EEnvQueryRunMode::RandomBest25Pct;
 	BlackboardKey.AddVectorFilter(this, "EQS Open Location");
 	QueryFinishedDelegate.BindUObject(this, &URunEQSOpenSpace::OnQueryFinished);
 }
