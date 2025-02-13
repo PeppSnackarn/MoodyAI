@@ -15,6 +15,7 @@ class PORTFOLIOPIECE1_API AMeleeAIController : public AAIController
 {
 	GENERATED_BODY()
 protected:
+	AMeleeAIController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 	UBehaviorTree* CreateBehaviorTree();
 	void AssembleBehaviorTree(UBehaviorTree* Tree);
 	virtual void BeginPlay() override;

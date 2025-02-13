@@ -4,6 +4,7 @@
 #include "MeleeAIController.h"
 
 #include "AIBaseClass.h"
+#include "DetourCrowdAIController.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/Blackboard/BlackboardKeyType_Bool.h"
@@ -14,6 +15,7 @@
 #include "BehaviorTree/Tasks/BTTask_Wait.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
+#include "Navigation/CrowdFollowingComponent.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/AttackPlayer.h"
 #include "PortfolioPiece1/AI Decorators/BTDecorator_CheckBool.h"
 #include "PortfolioPiece1/AI Decorators/BTDecorator_TakeToken.h"
@@ -23,6 +25,12 @@
 #include "PortfolioPiece1/AI Tasks/Enemy/RunEQSOpenSpace.h"
 #include "PortfolioPiece1/AI Tasks/Enemy/TokenCheckTask.h"
 
+
+AMeleeAIController::AMeleeAIController(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<UCrowdFollowingComponent>(TEXT("PathFollowingComponent")))
+{
+	
+}
 
 UBehaviorTree* AMeleeAIController::CreateBehaviorTree()
 {
@@ -189,9 +197,17 @@ void AMeleeAIController::BeginPlay()
 void AMeleeAIController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-
 	BlackBoardComp->SetValueAsVector("Player Location", UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation());
 	BlackBoardComp->SetValueAsBool("Is Agressive", selfRef->agressive);
 	BlackBoardComp->SetValueAsBool("Tokens Available", selfRef->hasTokensToAttack);
 	BlackBoardComp->SetValueAsBool("Holding Token", selfRef->isHoldingToken);
+
+	if(selfRef->agressive && !selfRef->isHoldingToken)
+	{
+		Cast<UCrowdFollowingComponent>(GetPathFollowingComponent())->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Medium);
+	}
+	else
+	{
+		Cast<UCrowdFollowingComponent>(GetPathFollowingComponent())->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Low);
+	}
 }
